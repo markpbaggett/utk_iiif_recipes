@@ -30,6 +30,21 @@ metadata that is scraped is done so at random and is definitely not exhaustive. 
 The :code:`iiif` package includes the :code:`manifest` module.  The classes here are used to build the presentation
 manifest and its various canvases.
 
+Generating a Book Manifest
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This application can be installed on any machine that has access to the RISearch interface. You can install this various
+ways, but the easiest is most likely with `pipenv <https://github.com/pypa/pipenv>`_.
+
+Once you've installed the application in a virtual environment with pipenv, you can generate a manifest by activating
+the virtual environment and running the script like below.
+
+.. code-block:: shell
+
+    pipenv shell
+    python run.py -b agrtfhs:2275 -f manifest.json -r http://localhost:8080/fedora/risearch -s https://digital.lib.utk.edu
+
+
 A Sample Book Manifest
 ^^^^^^^^^^^^^^^^^^^^^^
 
