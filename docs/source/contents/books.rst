@@ -27,9 +27,17 @@ methods need to be considerate of typing.  This is done in certain cases (i.e. :
 always.  Because of this, there are probably records in our repository that would throw an exception. Also, descriptive
 metadata that is scraped is done so at random and is definitely not exhaustive. Any contributions here would be welcomed.
 
+The :code:`iiif` package includes the :code:`manifest` module.  The classes here are used to build the presentation
+manifest and its various canvases.
 
+A Sample Book Manifest
+^^^^^^^^^^^^^^^^^^^^^^
+
+* `View in Universal Viewer <http://universalviewer.io/uv.html?manifest=https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/sample_book.json>`_
+* `View in Mirador <https://projectmirador.org/embed/?iiif-content=https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/sample_book.json>`_
 
 .. code-block:: json
+    :caption: Sample Book Manifest
 
     {
         "@context": "http://iiif.io/api/presentation/2/context.json",
