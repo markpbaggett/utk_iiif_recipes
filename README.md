@@ -1,4 +1,6 @@
-UTK IIIF Recipes
-================
+UTK IIIF Cookbook
+=================
 
-Recipes for various content models to be rendered in IIIF viewers.
+Recipes for building IIIF manifests using our content.
+
+[Visit the generated docs by clicking here.](https://utk-iiif-cookbook.readthedocs.io/en/latest/)
