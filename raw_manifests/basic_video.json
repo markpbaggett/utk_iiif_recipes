@@ -1,0 +1,40 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/basic_video.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Waterwheel and Easter at the Ogles"
+    ]
+  },
+  "items": [
+    {
+      "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/basic_video/canvas",
+      "type": "Canvas",
+      "height": 360,
+      "width": 640,
+      "duration": 46,
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/basic_video/canvas/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/basic_video/canvas/page/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://digital.lib.utk.edu/collections/islandora/object/wderfilms%3A10/datastream/MP4/view",
+                "type": "Video",
+                "height": 360,
+                "width": 480,
+                "duration": 46,
+                "format": "video/mp4"
+              },
+              "target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/basic_video/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ]
