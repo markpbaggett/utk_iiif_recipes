@@ -1,0 +1,1178 @@
+Books
+=====
+
+Generating A Sample 2.1.1 Book Manifest
+---------------------------------------
+
+2.1.1 manifests can be generated for any book like object using `UTK Book to Presentation Manifest <https://github.com/markpbaggett/utk_book_presentation_manifest>`_.
+This can be run from any machine that has access to the Resource Index url.  No other credentials are required.
+
+The application here is far from perfect and really serves mostly as a proof of concept.  There are bugs and gotchas
+which I'll discuss below.
+
+How Does It Work
+^^^^^^^^^^^^^^^^
+
+Currently, this application consists of two packages: :code:`fedora` and :code:`iiif`. The :code:`fedora` package serves
+two purposes:  finding relationships to other Fedora objects and scraping descriptive metadata.
+
+Finding relationships is done via the :code:`risearch` module. There are multiple classes here, but the one of primary
+interest in :code:`TuplesSearch`. :code:`TuplesSearch` allows us to find out what collection a book belongs to and get
+an ordered list of page objects that relate to that book.
+
+Scraping descriptive metadata is done with the :code:`ModsScraper` class in the :code:`mods` module. By design, this only
+works over http and does not use the API. It's also a bit of a mess.  It converts the MODS xml datastream to an
+OrderedDict.  This isn't ideal.  It'd probably be better to interact with this via xpath. Because xpath isn't used, the
+methods need to be considerate of typing.  This is done in certain cases (i.e. :code:`get_navigation_date()`), but not
+always.  Because of this, there are probably records in our repository that would throw an exception. Also, descriptive
+metadata that is scraped is done so at random and is definitely not exhaustive. Any contributions here would be welcomed.
+
+
+
+.. code-block:: json
+
+    {
+        "@context": "http://iiif.io/api/presentation/2/context.json",
+        "@id": "http://e8f3d3ee-0364-4cdf-ac4f-8c1f67a10cfe",
+        "@type": "sc:Manifest",
+        "label": "Tennessee farm and home science, progress report 46, April - June 1963",
+        "metadata": [
+            {
+                "label": "Topics",
+                "value": [
+                    "Agriculture--Tennessee",
+                    "Farm management",
+                    "Livestock",
+                    "Agricultural chemicals",
+                    "Agricultural experiment stations"
+                ]
+            },
+            {
+                "label": "Table of Contents",
+                "value": "Examining beef cows for pregnancies - Personnel summary - Systemics increase wheat forage - Predict apple yields with leaf blade analysis? - Cows need a \"milk break\" - Growing corn on the plateau - Tests with phosphorus for pigs - Farm credit shifts, 1950 to 1962 - Costs of making whole-hog sausage - New bulletins"
+            }
+        ],
+        "description": [
+            {
+                "@value": "Quarterly newsletter from Knoxville, Tennessee, covering farming and home economics.",
+                "@language": "en"
+            }
+        ],
+        "license": "http://rightsstatements.org/vocab/NoC-US/1.0/",
+        "attribution": "No Copyright - United States",
+        "related": {
+            "@id": "https://digital.lib.utk.edu//collections/islandora/object/agrtfhs:2275",
+            "format": "text/html"
+        },
+        "seeAlso": [
+            {
+                "@id": "https://digital.lib.utk.edu//collections/islandora/object/agrtfhs:2275/datastream/MODS",
+                "format": "application/xml",
+                "profile": "http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
+            },
+            {
+                "@id": "https://digital.lib.utk.edu//collections/islandora/object/agrtfhs:2275/datastream/RELS-EXT",
+                "format": "application/rdf+xml",
+                "profile": "https://fedora.info/definitions/1/0/fedora-relsext-ontology.rdfs"
+            }
+        ],
+        "sequences": [
+            {
+                "@id": "http://8e09dbc2-404c-4dc3-a467-5d21bab37fad",
+                "@type": "sc:Sequence",
+                "viewingHint": "paged",
+                "viewingDirection": "left-to-right",
+                "label": [
+                    {
+                        "@value": "Normal Sequence",
+                        "@language": "en"
+                    }
+                ],
+                "canvases": [
+                    {
+                        "@id": "http://8640eca4-31c1-494a-b49c-132c6b60300c",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2279",
+                        "height": 4296,
+                        "width": 3240,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://14f1f687-0a00-492c-a5fa-0e3320e4d6ff",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2279~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2279~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4296,
+                                    "width": 3240
+                                },
+                                "on": "http://8640eca4-31c1-494a-b49c-132c6b60300c"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://c04d9cfa-cbdb-4834-a4e6-37dbd62fb3c4",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2278",
+                        "height": 4296,
+                        "width": 3240,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://bfac2540-26ca-4ace-b052-9afc35faaf71",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2278~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2278~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4296,
+                                    "width": 3240
+                                },
+                                "on": "http://c04d9cfa-cbdb-4834-a4e6-37dbd62fb3c4"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://7e2ff4a4-5c6c-4e90-b9f1-0fa00b3067ff",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2291",
+                        "height": 4284,
+                        "width": 3240,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://0eadb7ca-2b80-4a7d-9855-f476cb6e3785",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2291~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2291~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4284,
+                                    "width": 3240
+                                },
+                                "on": "http://7e2ff4a4-5c6c-4e90-b9f1-0fa00b3067ff"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://7902cf02-2169-4088-bdfd-cca6b9c91e33",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2290",
+                        "height": 4284,
+                        "width": 3240,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://8cc331b3-a586-4295-a451-b1a4f0bc1de7",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2290~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2290~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4284,
+                                    "width": 3240
+                                },
+                                "on": "http://7902cf02-2169-4088-bdfd-cca6b9c91e33"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://50d810ab-5277-44c9-9be8-b0659e935f27",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2289",
+                        "height": 4292,
+                        "width": 3244,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://f88c2093-28af-44e0-9776-baf0cedbce07",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2289~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2289~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4292,
+                                    "width": 3244
+                                },
+                                "on": "http://50d810ab-5277-44c9-9be8-b0659e935f27"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://5be5e151-bdf3-498c-89ce-d5c02f4a10fd",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2288",
+                        "height": 4292,
+                        "width": 3248,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://3af94fb5-225e-4be8-88ce-de5c2f4dee9f",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2288~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2288~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4292,
+                                    "width": 3248
+                                },
+                                "on": "http://5be5e151-bdf3-498c-89ce-d5c02f4a10fd"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://45a9d361-39f2-4b94-9913-ae051fec1178",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2287",
+                        "height": 4292,
+                        "width": 3254,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://f8c2fbc9-4c34-40e7-8d37-cdce6dde29c0",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2287~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2287~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4292,
+                                    "width": 3254
+                                },
+                                "on": "http://45a9d361-39f2-4b94-9913-ae051fec1178"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://c632b05e-7712-4cb1-8f95-efef07e7ff8f",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2286",
+                        "height": 4296,
+                        "width": 3254,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://88698c12-7e39-4462-99d9-d6af9492e5e5",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2286~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2286~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4296,
+                                    "width": 3254
+                                },
+                                "on": "http://c632b05e-7712-4cb1-8f95-efef07e7ff8f"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://e2d18545-0458-41e3-a76d-41411dcd3279",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2285",
+                        "height": 4308,
+                        "width": 3264,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://9b078a20-79c4-4278-891f-ae3780c63073",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2285~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2285~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4308,
+                                    "width": 3264
+                                },
+                                "on": "http://e2d18545-0458-41e3-a76d-41411dcd3279"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://297ef620-a476-4fd3-82f8-2abe4b77ff2f",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2284",
+                        "height": 4308,
+                        "width": 3260,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://73ec255f-31df-412d-a999-41e591f4e957",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2284~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2284~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4308,
+                                    "width": 3260
+                                },
+                                "on": "http://297ef620-a476-4fd3-82f8-2abe4b77ff2f"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://6c5e533f-96d3-4af5-910c-6766d1272a87",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2283",
+                        "height": 4296,
+                        "width": 3248,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://9e5aabbe-ec06-4401-afdc-33c03adb0f8d",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2283~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2283~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4296,
+                                    "width": 3248
+                                },
+                                "on": "http://6c5e533f-96d3-4af5-910c-6766d1272a87"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://505e0603-f770-4078-a025-2c87927e1db8",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2282",
+                        "height": 4296,
+                        "width": 3248,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://4eed668f-27b3-415a-9fc7-047073cde7d7",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2282~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2282~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4296,
+                                    "width": 3248
+                                },
+                                "on": "http://505e0603-f770-4078-a025-2c87927e1db8"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://92250422-3396-4256-8bcc-729f7ecc6078",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2281",
+                        "height": 4296,
+                        "width": 3254,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://e0b58f44-9640-490b-bdd2-cc04374fbe9c",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2281~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2281~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4296,
+                                    "width": 3254
+                                },
+                                "on": "http://92250422-3396-4256-8bcc-729f7ecc6078"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://0f5854be-8268-433e-ae59-09c18cde390f",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2280",
+                        "height": 4296,
+                        "width": 3256,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://6431b407-7dd8-454d-a2d7-b70c0d7c1a2b",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2280~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2280~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4296,
+                                    "width": 3256
+                                },
+                                "on": "http://0f5854be-8268-433e-ae59-09c18cde390f"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://edb3c07c-aba4-463b-9055-a933c2073a2c",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2277",
+                        "height": 4292,
+                        "width": 3264,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://e9d7344a-1195-4bac-a2d5-cda2e92da50a",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2277~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2277~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4292,
+                                    "width": 3264
+                                },
+                                "on": "http://edb3c07c-aba4-463b-9055-a933c2073a2c"
+                            }
+                        ]
+                    },
+                    {
+                        "@id": "http://830a879c-0f6c-48d0-863a-a582db523db8",
+                        "@type": "sc:Canvas",
+                        "label": "agrtfhs:2276",
+                        "height": 4296,
+                        "width": 3260,
+                        "images": [
+                            {
+                                "@context": "http://iiif.io/api/presentation/2/context.json",
+                                "@id": "http://953460c0-b58d-496a-bddd-68adc65778da",
+                                "@type": "oa:Annotation",
+                                "motivation": "sc:painting",
+                                "resource": {
+                                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2276~datastream~JP2/full/full/0/default.jpg",
+                                    "@type": "dctypes:Image",
+                                    "format": "image/jpeg",
+                                    "service": {
+                                        "@context": "http://iiif.io/api/image/2/context.json",
+                                        "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2276~datastream~JP2",
+                                        "profile": [
+                                            "http://iiif.io/api/image/2/level2.json",
+                                            {
+                                                "formats": [
+                                                    "jpg",
+                                                    "tif",
+                                                    "gif",
+                                                    "png"
+                                                ],
+                                                "maxArea": 400000000,
+                                                "qualities": [
+                                                    "bitonal",
+                                                    "default",
+                                                    "gray",
+                                                    "color"
+                                                ],
+                                                "supports": [
+                                                    "regionByPx",
+                                                    "sizeByW",
+                                                    "sizeByWhListed",
+                                                    "cors",
+                                                    "regionSquare",
+                                                    "sizeByDistortedWh",
+                                                    "sizeAboveFull",
+                                                    "canonicalLinkHeader",
+                                                    "sizeByConfinedWh",
+                                                    "sizeByPct",
+                                                    "jsonldMediaType",
+                                                    "regionByPct",
+                                                    "rotationArbitrary",
+                                                    "sizeByH",
+                                                    "baseUriRedirect",
+                                                    "rotationBy90s",
+                                                    "profileLinkHeader",
+                                                    "sizeByForcedWh",
+                                                    "sizeByWh",
+                                                    "mirroring"
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "height": 4296,
+                                    "width": 3260
+                                },
+                                "on": "http://830a879c-0f6c-48d0-863a-a582db523db8"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "structures": [],
+        "thumbnail": {
+            "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2279~datastream~JP2/full/,150/0/default.jpg",
+            "service": {
+                "@context": "http://iiif.io/api/image/2/context.json",
+                "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~agrtfhs:2279~datastream~JP2/",
+                "profile": "http://iiif.io/api/image/2/level2.json"
+            }
+        },
+        "navDate": "1963-01-01T00:00:00Z",
+        "within": "https://digital.lib.utk.edu//collections/islandora/object/collections:agrtfhs"
+    }
