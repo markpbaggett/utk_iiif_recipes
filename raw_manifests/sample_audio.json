@@ -1,0 +1,88 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/wwiioh:2001.json",
+    "type": "Manifest",
+    "label": {
+        "en": [
+            "Mason, Gordon A.: WWII Oral History"
+        ]
+    },
+    "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+    "metadata": [
+        {
+            "label": {
+                "en": [
+                    "Abstract"
+                ]
+            },
+            "value": {
+                "en": [
+                    "Interview with Gordon A. Mason on Feb 13, 1991."
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "Topics"
+                ]
+            },
+            "value": {
+                "en": [
+                    "Oral history",
+                    "World War, 1939-1945--Veterans--United States--Biography"
+                ]
+            }
+        }
+    ],
+    "thumbnail": [
+        {
+            "id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~wwiioh:2001~datastream~TN/full/full/1/default.png",
+            "type": "Image",
+            "format": "image/png",
+            "height": 150,
+            "width": 150
+        }
+    ],
+    "summary": {
+        "en": [
+            "Interview with Gordon A. Mason on Feb 13, 1991."
+        ]
+    },
+    "items": [
+        {
+            "id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/wwiioh:2001/canvas",
+            "type": "Canvas",
+            "duration": 2825.339,
+            "thumbnail": [
+                {
+                    "id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~wwiioh:2001~datastream~TN/full/full/1/default.png",
+                    "type": "Image",
+                    "format": "image/png",
+                    "height": 150,
+                    "width": 150
+                }
+            ],
+            "items": [
+                {
+                    "id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/wwiioh:2001/canvas/page",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/wwiioh:2001/canvas/page/annotation",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "body": {
+                                "id": "https://digital.lib.utk.edu//collections/islandora/object/wwiioh:2001/datastream/PROXY_MP3/view",
+                                "type": "Sound",
+                                "format": "audio/mpeg",
+                                "duration": 2825.339
+                            },
+                            "target": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/wwiioh:2001/canvas/page"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
