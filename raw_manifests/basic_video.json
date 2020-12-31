@@ -7,6 +7,19 @@
       "Waterwheel and Easter at the Ogles"
     ]
   },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "metadata": [
+    {
+      "label":
+      {
+        "en": ["Topics"]
+      },
+      "value":
+      {
+        "en": ["Mountain people", "Mountain life", "Cabins"]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/basic_video/canvas",
