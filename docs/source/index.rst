@@ -6,7 +6,7 @@ repository systems via IIIF. All additions are welcomed.
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
 
    contents/*
