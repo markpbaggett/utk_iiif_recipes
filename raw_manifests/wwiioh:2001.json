@@ -44,6 +44,7 @@
             "width": 150
         }
     ],
+    "accompanyingCanvas": {"id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/wwiioh:2001/TN/canvas", "type": "Canvas", "label": {"en": ["Image representing the TN datastream for wwiioh:2001 at https://digital.lib.utk.edu/"]}, "height": 150, "width": 150, "items": [[{"id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/wwiioh:2001/TN/canvas/canvas/annotation/page", "type": "AnnotationPage", "items": [{"id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/wwiioh:2001/TN/canvas/canvas/annotation/image", "type": "Annotation", "motivation": "painting", "body": {"id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~wwiioh:2001~datastream~TN/full/full/0/default.png", "type": "Image", "format": "image/png", "height": 150, "width": 150, "service": [{"@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~wwiioh:2001~datastream~TN", "@type": "ImageService2", "profile": "http://iiif.io/api/image/2/level2.json"}]}, "target": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/wwiioh:2001/TN/canvas/canvas/annotation/page"}]}]]},
     "summary": {
         "en": [
             "Interview with Gordon A. Mason on Feb 13, 1991."
