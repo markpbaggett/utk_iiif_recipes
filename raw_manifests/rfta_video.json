@@ -1,0 +1,79 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/rfta_video.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Interview with John Schwartz and Sally Reamer, 2020-03-13"
+    ]
+  },
+  "rights": "https://creativecommons.org/licenses/by/4.0",
+  "metadata": [
+    {
+      "label":
+      {
+        "en": ["Topics"]
+      },
+      "value":
+      {
+        "en": ["Soils--Effect of fires on", "River surveys", "Great Smoky Mountains National Park (N.C. and Tenn.) "]
+      }
+    },
+        {
+      "label":
+      {
+        "en": ["Narrator"]
+      },
+      "value":
+      {
+        "en": ["John Schwartz", "Sally Reamer"]
+      }
+    },
+        {
+      "label":
+      {
+        "en": ["Interviewer"]
+      },
+      "value":
+      {
+        "en": ["Ken Wise"]
+      }
+    }
+  ],
+  "summary": {
+        "en": [
+            "Interview with John Schwartz, professor with the Department of Civil and Environmental Engineering at the University of Tennessee, and Sally Reamer, graduate student in the same department. The two discuss the effects of the fire upon the water system inside the Great Smoky Mountains National Park."
+        ]
+    },
+  "items": [
+    {
+      "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas",
+      "type": "Canvas",
+      "height": 360,
+      "width": 640,
+      "duration": 2190,
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://trace.lib.utk.edu/assets/rfta/20200313_Schwartz_John-Reamer_Salley.mp4",
+                "type": "Video",
+                "height": 360,
+                "width": 480,
+                "duration": 2190,
+                "format": "video/mp4"
+              },
+              "target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
