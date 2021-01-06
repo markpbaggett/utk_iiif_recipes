@@ -16,7 +16,7 @@
       },
       "value":
       {
-        "en": ["Soils--Effect of fires on", "River surveys", "Great Smoky Mountains National Park (N.C. and Tenn.) "]
+        "en": ["Soils--Effect of fires on", "River surveys", "Great Smoky Mountains National Park (N.C. and Tenn.)"]
       }
     },
         {
@@ -73,6 +73,51 @@
             }
           ]
         }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "type": "Range",
+      "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1",
+      "label": {
+        "en": [
+          "Interview Questions"
+        ]
+      },
+      "items": [
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/1",
+          "label": {
+            "en": [
+              "Can you state your name and relationship to the University of Tennessee?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=50,90"
+            }
+          ]
+        },
+
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/1",
+          "label": {
+            "en": [
+              "Where is your bed and breakfast located in relation to the town?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=91,166"
+            }
+          ]
+        }
+
       ]
     }
   ]
