@@ -112,11 +112,160 @@
           "items": [
             {
               "type": "Canvas",
-              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=116,145"
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=116,144.9"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/3",
+          "label": {
+            "en": [
+              "Sally, how long have you been in the area?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=145,179.9"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/4",
+          "label": {
+            "en": [
+              "When did each of you first become aware that there was a fire in the Smokies?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=180,290"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/5",
+          "label": {
+            "en": [
+              "When you called your friend in Gatlinburg, what did you find out?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=290.1,340"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/6",
+          "label": {
+            "en": [
+              "When did you first see the results of the fire?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=340.1,435"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/7",
+          "label": {
+            "en": [
+              "Can you describe what your research in the park had been?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=435.1,601"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/8",
+          "label": {
+            "en": [
+              "What was your role in the project and what was your interest?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=601.1,688"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/9",
+          "label": {
+            "en": [
+              "What kind of impact from the fire were you looking for?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=688.1,752"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/10",
+          "label": {
+            "en": [
+              "What did you hope to find studying the stream? Did the fire release sulfur?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=752.1,919"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/11",
+          "label": {
+            "en": [
+              "Did you see any differences amongst the varying burn level sites?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=919.1,979"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/12",
+          "label": {
+            "en": [
+              "Can you explain what organic content means?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=979.1,1022"
             }
           ]
         }
-
       ]
     }
   ]
