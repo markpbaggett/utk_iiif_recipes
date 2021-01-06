@@ -97,23 +97,22 @@
           "items": [
             {
               "type": "Canvas",
-              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=50,90"
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=66,115"
             }
           ]
         },
-
         {
           "type": "Range",
-          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/1",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/2",
           "label": {
             "en": [
-              "Where is your bed and breakfast located in relation to the town?"
+              "Can you give a reason why you agreed to the interview?"
             ]
           },
           "items": [
             {
               "type": "Canvas",
-              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=91,166"
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=116,145"
             }
           ]
         }
