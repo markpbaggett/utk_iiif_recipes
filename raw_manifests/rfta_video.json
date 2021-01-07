@@ -265,6 +265,231 @@
               "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=979.1,1022"
             }
           ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/13",
+          "label": {
+            "en": [
+              "What other differences did you see?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1022.1,1055"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/14",
+          "label": {
+            "en": [
+              "What distinctions are you seeing between this fire and ones out West?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1055.1,1184"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/15",
+          "label": {
+            "en": [
+              "Did the decrease in nitrogen surprise you?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1184.1,1238"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/16",
+          "label": {
+            "en": [
+              "What other hypotheses did you have going into this?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1238.1,1298"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/17",
+          "label": {
+            "en": [
+              "Why did you expect the fire to influence the streams?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1298.1,1323"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/18",
+          "label": {
+            "en": [
+              "Were there any other hypotheses you had?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1323.1,1381"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/19",
+          "label": {
+            "en": [
+              "Can you describe what the recovery was like and the severity?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1381.1,1444"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/20",
+          "label": {
+            "en": [
+              "Isn't a fire like this a natural occurrence?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1444.1,1525"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/21",
+          "label": {
+            "en": [
+              "What is the trajectory of your research? Where do you see it going?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1525.1,1627"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/22",
+          "label": {
+            "en": [
+              "Is this UT that's doing the long-term water monitoring project?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1627.1,1657"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/23",
+          "label": {
+            "en": [
+              "Can you talk about the value of this research for the average person?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1657.1,1782"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/24",
+          "label": {
+            "en": [
+              "Have you run across any research stating that the water quality has affected other living things in the forest?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1782.1,1838"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/25",
+          "label": {
+            "en": [
+              "Was there anything from the fire to your research findings that was surprising?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1838.1,2018"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/26",
+          "label": {
+            "en": [
+              "Do you think another fire like this could happen?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=2018.1,2073"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/27",
+          "label": {
+            "en": [
+              "Is there anything else that you would like to share?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=2073.1,2190"
+            }
+          ]
         }
       ]
     }
