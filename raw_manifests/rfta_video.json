@@ -74,6 +74,11 @@
                   "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_transcripts/20200313_Schwartz_John-Reamer_Salley_Canvas_corrected.vtt",
                   "type": "Text",
                   "format": "text/vtt",
+                  "label": {
+                    "en": [
+                      "Captions in WebVTT format"
+                    ]
+                  },
                   "language": "en"
                 }
               ],
