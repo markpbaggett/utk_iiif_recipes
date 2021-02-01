@@ -61,14 +61,22 @@
               "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "body": {
-                "id": "https://trace.lib.utk.edu/assets/rfta/20200313_Schwartz_John-Reamer_Salley.mp4",
-                "type": "Video",
-                "height": 360,
-                "width": 480,
-                "duration": 2190,
-                "format": "video/mp4"
-              },
+              "body": [
+                {
+                  "id": "https://trace.lib.utk.edu/assets/rfta/20200313_Schwartz_John-Reamer_Salley.mp4",
+                  "type": "Video",
+                  "height": 360,
+                  "width": 480,
+                  "duration": 2190,
+                  "format": "video/mp4"
+                },
+                {
+                  "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_transcripts/20200313_Schwartz_John-Reamer_Salley_Canvas_corrected.vtt",
+                  "type": "Text",
+                  "format": "text/vtt",
+                  "language": "en"
+                }
+              ],
               "target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
             }
           ]
