@@ -50,7 +50,7 @@
 			"items": [{
 				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation",
 				"type": "Annotation",
-				"motivation": "painting",
+				"motivation": "supplementing",
 				"body": [{
 						"id": "https://trace.lib.utk.edu/assets/rfta/20200313_Schwartz_John-Reamer_Salley_edited.mp4",
 						"type": "Video",
