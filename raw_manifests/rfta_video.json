@@ -7,7 +7,7 @@
 			"Interview with John Schwartz and Sally Reamer, 2020-03-13"
 		]
 	},
-	"rights": "https://creativecommons.org/licenses/by/4.0",
+	"rights": "https://creativecommons.org/licenses/by/4.0/",
 	"metadata": [{
 			"label": {
 				"en": ["Topics"]
@@ -47,19 +47,27 @@
 		"items": [{
 			"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page",
 			"type": "AnnotationPage",
-			"items": [{
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation",
-				"type": "Annotation",
-				"motivation": "supplementing",
-				"body": [{
+			"items": [
+				{
+					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation",
+					"type": "Annotation",
+					"motivation": "painting",
+					"body": [{
 						"id": "https://trace.lib.utk.edu/assets/rfta/20200313_Schwartz_John-Reamer_Salley_edited.mp4",
 						"type": "Video",
 						"height": 360,
 						"width": 480,
 						"duration": 2190,
 						"format": "video/mp4"
-					},
-					{
+					}
+					],
+					"target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
+				},
+				{
+					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation2",
+					"type": "Annotation",
+					"motivation": "supplementing",
+					"body": [{
 						"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_transcripts/20200313_Schwartz_John-Reamer_Salley_Canvas_corrected.vtt",
 						"type": "Text",
 						"format": "text/vtt",
@@ -69,10 +77,11 @@
 							]
 						},
 						"language": "en"
-					}
-				],
-				"target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
-			}]
+					}],
+					"target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
+				}
+
+			]
 		}]
 	}],
 	"structures": [{
