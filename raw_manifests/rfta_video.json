@@ -81,27 +81,35 @@
                 }
               ],
               "target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
-            },
-            {
-              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation2",
-              "type": "Annotation",
-              "motivation": "supplementing",
-              "body": [
-                {
-                  "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_transcripts/20200313_Schwartz_John-Reamer_Salley_Canvas_corrected.vtt",
-                  "type": "Text",
-                  "format": "text/vtt",
-                  "label": {
-                    "en": [
-                      "Captions in English"
-                    ]
-                  },
-                  "language": "en"
-                }
-              ],
-              "target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
             }
           ]
+        }
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page2",
+      "type": "AnnotationPage",
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page2/annotation2",
+          "type": "Annotation",
+          "motivation": "supplementing",
+          "body": [
+            {
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_transcripts/20200313_Schwartz_John-Reamer_Salley_Canvas_corrected.vtt",
+              "type": "Text",
+              "format": "text/vtt",
+              "label": {
+                "en": [
+                  "Captions in English"
+                ]
+              },
+              "language": "en"
+            }
+          ],
+          "target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
         }
       ]
     }
