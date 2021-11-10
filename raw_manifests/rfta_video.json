@@ -1,448 +1,527 @@
 {
-	"@context": "http://iiif.io/api/presentation/3/context.json",
-	"id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/rfta_video.json",
-	"type": "Manifest",
-	"label": {
-		"en": [
-			"Interview with John Schwartz and Sally Reamer, 2020-03-13"
-		]
-	},
-	"rights": "https://creativecommons.org/licenses/by/4.0/",
-	"metadata": [{
-			"label": {
-				"en": ["Topics"]
-			},
-			"value": {
-				"en": ["Soils--Effect of fires on", "River surveys", "Great Smoky Mountains National Park (N.C. and Tenn.)"]
-			}
-		},
-		{
-			"label": {
-				"en": ["Narrator"]
-			},
-			"value": {
-				"en": ["John Schwartz", "Sally Reamer"]
-			}
-		},
-		{
-			"label": {
-				"en": ["Interviewer"]
-			},
-			"value": {
-				"en": ["Ken Wise"]
-			}
-		}
-	],
-	"summary": {
-		"en": [
-			"Interview with John Schwartz, professor with the Department of Civil and Environmental Engineering at the University of Tennessee, and Sally Reamer, graduate student in the same department. The two discuss the effects of the fire upon the water system inside the Great Smoky Mountains National Park."
-		]
-	},
-	"items": [{
-		"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas",
-		"type": "Canvas",
-		"height": 360,
-		"width": 640,
-		"duration": 2190,
-		"items": [{
-			"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page",
-			"type": "AnnotationPage",
-			"items": [
-				{
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation",
-					"type": "Annotation",
-					"motivation": "painting",
-					"body": [{
-						"id": "https://trace.lib.utk.edu/assets/rfta/20200313_Schwartz_John-Reamer_Salley_edited.mp4",
-						"type": "Video",
-						"height": 360,
-						"width": 480,
-						"duration": 2190,
-						"format": "video/mp4"
-					}
-					],
-					"target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
-				},
-				{
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation2",
-					"type": "Annotation",
-					"motivation": "supplementing",
-					"body": [{
-						"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_transcripts/20200313_Schwartz_John-Reamer_Salley_Canvas_corrected.vtt",
-						"type": "Text",
-						"format": "text/vtt",
-						"label": {
-							"en": [
-								"Captions in English"
-							]
-						},
-						"language": "en"
-					}],
-					"target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
-				}
-
-			]
-		}]
-	}],
-	"structures": [{
-		"type": "Range",
-		"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1",
-		"label": {
-			"en": [
-				"Interview Questions"
-			]
-		},
-		"items": [{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/1",
-				"label": {
-					"en": [
-						"Can you state your name and relationship to the University of Tennessee?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=66,115"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/2",
-				"label": {
-					"en": [
-						"Can you give a reason why you agreed to the interview?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=116,144.9"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/3",
-				"label": {
-					"en": [
-						"Sally, how long have you been in the area?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=145,179.9"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/4",
-				"label": {
-					"en": [
-						"When did each of you first become aware that there was a fire in the Smokies?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=180,290"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/5",
-				"label": {
-					"en": [
-						"When you called your friend in Gatlinburg, what did you find out?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=290.1,340"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/6",
-				"label": {
-					"en": [
-						"When did you first see the results of the fire?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=340.1,435"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/7",
-				"label": {
-					"en": [
-						"Can you describe what your research in the park had been?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=435.1,601"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/8",
-				"label": {
-					"en": [
-						"What was your role in the project and what was your interest?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=601.1,688"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/9",
-				"label": {
-					"en": [
-						"What kind of impact from the fire were you looking for?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=688.1,752"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/10",
-				"label": {
-					"en": [
-						"What did you hope to find studying the stream? Did the fire release sulfur?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=752.1,919"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/11",
-				"label": {
-					"en": [
-						"Did you see any differences amongst the varying burn level sites?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=919.1,979"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/12",
-				"label": {
-					"en": [
-						"Can you explain what organic content means?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=979.1,1022"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/13",
-				"label": {
-					"en": [
-						"What other differences did you see?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1022.1,1055"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/14",
-				"label": {
-					"en": [
-						"What distinctions are you seeing between this fire and ones out West?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1055.1,1184"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/15",
-				"label": {
-					"en": [
-						"Did the decrease in nitrogen surprise you?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1184.1,1238"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/16",
-				"label": {
-					"en": [
-						"What other hypotheses did you have going into this?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1238.1,1298"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/17",
-				"label": {
-					"en": [
-						"Why did you expect the fire to influence the streams?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1298.1,1323"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/18",
-				"label": {
-					"en": [
-						"Were there any other hypotheses you had?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1323.1,1381"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/19",
-				"label": {
-					"en": [
-						"Can you describe what the recovery was like and the severity?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1381.1,1444"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/20",
-				"label": {
-					"en": [
-						"Isn't a fire like this a natural occurrence?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1444.1,1525"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/21",
-				"label": {
-					"en": [
-						"What is the trajectory of your research? Where do you see it going?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1525.1,1627"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/22",
-				"label": {
-					"en": [
-						"Is this UT that's doing the long-term water monitoring project?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1627.1,1657"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/23",
-				"label": {
-					"en": [
-						"Can you talk about the value of this research for the average person?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1657.1,1782"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/24",
-				"label": {
-					"en": [
-						"Have you run across any research stating that the water quality has affected other living things in the forest?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1782.1,1838"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/25",
-				"label": {
-					"en": [
-						"Was there anything from the fire to your research findings that was surprising?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1838.1,2018"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/26",
-				"label": {
-					"en": [
-						"Do you think another fire like this could happen?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=2018.1,2073"
-				}]
-			},
-			{
-				"type": "Range",
-				"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/27",
-				"label": {
-					"en": [
-						"Is there anything else that you would like to share?"
-					]
-				},
-				"items": [{
-					"type": "Canvas",
-					"id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=2073.1,2190"
-				}]
-			}
-		]
-	}]
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://raw.githubusercontent.com/utkdigitalinitiatives/utk_iiif_recipes/main/raw_manifests/rfta_video.json",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Interview with John Schwartz and Sally Reamer, 2020-03-13"
+    ]
+  },
+  "rights": "https://creativecommons.org/licenses/by/4.0/",
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Topics"
+        ]
+      },
+      "value": {
+        "en": [
+          "Soils--Effect of fires on",
+          "River surveys",
+          "Great Smoky Mountains National Park (N.C. and Tenn.)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Narrator"
+        ]
+      },
+      "value": {
+        "en": [
+          "John Schwartz",
+          "Sally Reamer"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Interviewer"
+        ]
+      },
+      "value": {
+        "en": [
+          "Ken Wise"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "en": [
+      "Interview with John Schwartz, professor with the Department of Civil and Environmental Engineering at the University of Tennessee, and Sally Reamer, graduate student in the same department. The two discuss the effects of the fire upon the water system inside the Great Smoky Mountains National Park."
+    ]
+  },
+  "items": [
+    {
+      "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas",
+      "type": "Canvas",
+      "height": 360,
+      "width": 640,
+      "duration": 2190,
+      "items": [
+        {
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": [
+                {
+                  "id": "https://trace.lib.utk.edu/assets/rfta/20200313_Schwartz_John-Reamer_Salley_edited.mp4",
+                  "type": "Video",
+                  "height": 360,
+                  "width": 480,
+                  "duration": 2190,
+                  "format": "video/mp4"
+                }
+              ],
+              "target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
+            },
+            {
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas/page/annotation2",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": [
+                {
+                  "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_transcripts/20200313_Schwartz_John-Reamer_Salley_Canvas_corrected.vtt",
+                  "type": "Text",
+                  "format": "text/vtt",
+                  "label": {
+                    "en": [
+                      "Captions in English"
+                    ]
+                  },
+                  "language": "en"
+                }
+              ],
+              "target": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "type": "Range",
+      "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1",
+      "label": {
+        "en": [
+          "Interview Questions"
+        ]
+      },
+      "items": [
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/1",
+          "label": {
+            "en": [
+              "Can you state your name and relationship to the University of Tennessee?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=66,115"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/2",
+          "label": {
+            "en": [
+              "Can you give a reason why you agreed to the interview?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=116,144.9"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/3",
+          "label": {
+            "en": [
+              "Sally, how long have you been in the area?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=145,179.9"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/4",
+          "label": {
+            "en": [
+              "When did each of you first become aware that there was a fire in the Smokies?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=180,290"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/5",
+          "label": {
+            "en": [
+              "When you called your friend in Gatlinburg, what did you find out?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=290.1,340"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/6",
+          "label": {
+            "en": [
+              "When did you first see the results of the fire?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=340.1,435"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/7",
+          "label": {
+            "en": [
+              "Can you describe what your research in the park had been?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=435.1,601"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/8",
+          "label": {
+            "en": [
+              "What was your role in the project and what was your interest?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=601.1,688"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/9",
+          "label": {
+            "en": [
+              "What kind of impact from the fire were you looking for?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=688.1,752"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/10",
+          "label": {
+            "en": [
+              "What did you hope to find studying the stream? Did the fire release sulfur?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=752.1,919"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/11",
+          "label": {
+            "en": [
+              "Did you see any differences amongst the varying burn level sites?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=919.1,979"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/12",
+          "label": {
+            "en": [
+              "Can you explain what organic content means?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=979.1,1022"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/13",
+          "label": {
+            "en": [
+              "What other differences did you see?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1022.1,1055"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/14",
+          "label": {
+            "en": [
+              "What distinctions are you seeing between this fire and ones out West?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1055.1,1184"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/15",
+          "label": {
+            "en": [
+              "Did the decrease in nitrogen surprise you?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1184.1,1238"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/16",
+          "label": {
+            "en": [
+              "What other hypotheses did you have going into this?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1238.1,1298"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/17",
+          "label": {
+            "en": [
+              "Why did you expect the fire to influence the streams?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1298.1,1323"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/18",
+          "label": {
+            "en": [
+              "Were there any other hypotheses you had?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1323.1,1381"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/19",
+          "label": {
+            "en": [
+              "Can you describe what the recovery was like and the severity?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1381.1,1444"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/20",
+          "label": {
+            "en": [
+              "Isn't a fire like this a natural occurrence?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1444.1,1525"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/21",
+          "label": {
+            "en": [
+              "What is the trajectory of your research? Where do you see it going?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1525.1,1627"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/22",
+          "label": {
+            "en": [
+              "Is this UT that's doing the long-term water monitoring project?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1627.1,1657"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/23",
+          "label": {
+            "en": [
+              "Can you talk about the value of this research for the average person?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1657.1,1782"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/24",
+          "label": {
+            "en": [
+              "Have you run across any research stating that the water quality has affected other living things in the forest?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1782.1,1838"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/25",
+          "label": {
+            "en": [
+              "Was there anything from the fire to your research findings that was surprising?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=1838.1,2018"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/26",
+          "label": {
+            "en": [
+              "Do you think another fire like this could happen?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=2018.1,2073"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/range/1/question/27",
+          "label": {
+            "en": [
+              "Is there anything else that you would like to share?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/rfta_video/canvas#t=2073.1,2190"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
