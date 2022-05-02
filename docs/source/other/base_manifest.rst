@@ -164,29 +164,198 @@ See `3.1. Descriptive Properties: metadata <https://iiif.io/api/presentation/3.0
 requiredStatement
 =================
 
+The :code:`requiredStatement` property includes text that MUST be displayed when a resource is displayed or used. It
+MUST be a JSON-like object with corresponding labels and values that should be displayed.
+
+For digital objects from our repository, this property exists if the XPATH expression :code:`recordInfo/recordContentSource`
+returns a value when executed against the MODS record.  When it does, the :code:`requiredStatement` property gets a
+value like this:
+
+.. code-block:: json
+
+{
+  "requiredStatement": {
+    "label": { "en": [ "Provided by" ] },
+    "value": { "en": [ "VALUE OF XPATH EXPRESSION" ] }
+  }
+}
+
+See `3.1. Descriptive Properties: requiredStatement <https://iiif.io/api/presentation/3.0/#requiredStatement>`_ for more
+information.
+
 ========
 provider
 ========
+
+The :code:`provider` property represents a n organization or person that contributed to providing the content of the
+resource. Clients can then display this information to the user to acknowledge the provider’s contributions. This
+differs from the :code:`requiredStatement` property, in that the data is structured, allowing the client to do more than
+just present text but instead have richer information about the people and organizations to use in different interfaces.
+
+Despite this, we use the property to always describe ourselves:
+
+.. code-block:: json
+
+    {
+      "provider": [
+        {
+          "id": "https://www.lib.utk.edu/about/",
+          "type": "Agent",
+          "label": { "en": [ "University of Tennessee, Knoxville. Libraries" ] },
+          "homepage": [
+            {
+              "id": "https://www.lib.utk.edu/",
+              "type": "Text",
+              "label": { "en": [ "University of Tennessee Libraries Homepage" ] },
+              "format": "text/html"
+            }
+          ],
+          "logo": [
+            {
+              "id": "https://utkdigitalinitiatives.github.io/iiif-level-0/ut_libraries_centered/full/full/0/default.jpg",
+              "type": "Image",
+              "format": "image/png",
+              "height": 200,
+              "width": 200
+            }
+          ],
+        }
+      ]
+    }
+
+See `3.1. Descriptive Properties: provider <https://iiif.io/api/presentation/3.0/#provider>`_ for more
+information.
 
 =========
 thumbnail
 =========
 
+Each manifest should have a :code:`thumbnail` property.  This property is a  content resource, such as a small image or
+short audio clip, that represents the resource that has the thumbnail property. A resource may have multiple thumbnail
+resources that have the same or different type and format.
+
+As a general rule, the manifest of a work is always represented by it's thumbnail datastream. The properties should be
+populated by the results of Cantaloupe Image API requests. It should look something like this:
+
+.. code-block:: json
+
+    {
+        "thumbnail": [
+            "id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~rftaart%3A74~datastream~TN/full/max/0/default.jpg",
+            "width": 200,
+            "height": 157,
+            "service": [
+                {
+                    "@id": "https://digital.lib.utk.edu/iiif/2/collections~islandora~object~rftaart%3A74~datastream~TN",
+                    "@type": "http://iiif.io/api/image/2/context.json",
+                    "@profile": "http://iiif.io/api/image/2/level2.json"
+                }
+            ],
+            "type": "Image",
+            "format" "image/jpeg"
+        ]
+    }
+
+Audio and video works may also have a :code:`duration` property.
+
+Since collections do not necessarily have a representative thumbnail in the repository, the value of its :code:`thumbnail`
+property is derived from the thumbnails of all objects in the collection.
+
+See `3.1. Descriptive Properties: thumbnail <https://iiif.io/api/presentation/3.0/#thumbnail>`_ for more information.
+
 =====
 items
 =====
+
+The :code:`items` property includes the list of child resources of the manifest.  Most of the time, at root, :code:`items`
+contains all the Works canvases. The exception is on Collection manifests where this contains a list of all the collections
+manifests.
+
+A specific method is used to build this list for Books and Compound Objects since they are multi-canvased.  All other
+work types use another method.
+
+For specific information regarding this property, see the associated work type.
+
+See `3.4 Structural Properties: items <https://iiif.io/api/presentation/3.0/#items>`_ for more information.
 
 =======
 seeAlso
 =======
 
+The :code:`seeAlso` property is a machine-readable resource such as an XML or RDF description that is related to the
+current resource.
+
+For UT Collections, this always refers to the MODS record and looks like this:
+
+.. code-block:: json
+
+    "seeAlso": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rfta%3A8\/datastream\/MODS",
+          "type": "Dataset",
+          "label": {
+            "en": [
+              "Bibliographic Description in MODS"
+            ]
+          },
+          "format": "application\/xml",
+          "profile": "http:\/\/www.loc.gov\/standards\/mods\/v3\/mods-3-5.xsd"
+        }
+      ]
+    }
+
+See `3.3.1. External Links: partOf <https://iiif.io/api/presentation/3.0/#partOf>`_ for more information.
+
 ======
 partOf
 ======
 
+The :code:`partOf` property lists the IIIF resources that contain this one.  It may be a collection manifest or the
+manifest of a compound object. The :code:`type` property should describe what the containing manifest is. If the object
+is in multiple collections or multiple compound objects, all will be included.
+
+.. code-block:: json
+
+    {
+      "partOf": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/collection\/collections\/rfta",
+          "type": "Collection"
+        },
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/collection\/collections\/rftatest",
+          "type": "Collection"
+        }
+      ]
+    }
+
+See `3.3.1. Linking Properties: partOf <https://iiif.io/api/presentation/3.0/#partOf>`_ for more information.
+
 ========
 homepage
 ========
+
+The :code:`homepage` property is a web page that is about the object represented by the resource.  Usually, this is the
+landing page in Islandora.  If the object's main page is not its Islandora page, this value should refer to that.
+
+.. code-block:: json
+
+    {
+      "homepage": [
+        {
+          "id": "https:\/\/rfta.lib.utk.edu\/interviews\/object\/seemona-and-daniel-whaley-2019-09-20",
+          "label": {
+            "en": [
+              "Interview with Seemona and Daniel Whaley, 2019-09-20"
+            ]
+          },
+          "type": "Text",
+          "format": "text\/html"
+        }
+      ],
+    }
+
+See `3.3.1. Linking Properties: homepage <https://iiif.io/api/presentation/3.0/#homepage>`_ for more information.
 
 ========
 behavior
