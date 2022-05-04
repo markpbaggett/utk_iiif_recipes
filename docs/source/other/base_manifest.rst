@@ -173,12 +173,12 @@ value like this:
 
 .. code-block:: json
 
-{
-  "requiredStatement": {
-    "label": { "en": [ "Provided by" ] },
-    "value": { "en": [ "VALUE OF XPATH EXPRESSION" ] }
-  }
-}
+    {
+      "requiredStatement": {
+        "label": { "en": [ "Provided by" ] },
+        "value": { "en": [ "VALUE OF XPATH EXPRESSION" ] }
+      }
+    }
 
 See `3.1. Descriptive Properties: requiredStatement <https://iiif.io/api/presentation/3.0/#requiredStatement>`_ for more
 information.
@@ -361,10 +361,36 @@ See `3.3.1. Linking Properties: homepage <https://iiif.io/api/presentation/3.0/#
 behavior
 ========
 
+The :code:`behavior` property dictates the set of user experience features that we would prefer clients to use when
+presenting the resource. This property must be an array of strings that align with presentation v3 or an extension.
+
+Most work types do not use this, but some do including :code:`CompoundObjects`, :code:`Books`, and :code:`Collections`.
+
+For more information about unique uses, see details in the work type definitions.
+
+See `3.2 Technical Properties: behavior <https://iiif.io/api/presentation/3.0/#behavior>`_ for more information.
+
 ================
 viewingDirection
 ================
 
+The :code:`viewingDirection` property dictates the direction in which a set of Canvases should be displayed to the user.
+
+Most work types do not use this unless there are specific expectations for viewing direction.
+
+For more information about unique uses, see details in the work type definitions.
+
+See `3.2 Technical Properties: viewingDirection <https://iiif.io/api/presentation/3.0/#viewingdirection>`_ for more information.
+
 ==================
 accompanyingCanvas
 ==================
+
+The :code:`accompanyingCanvas` property is a single Canvas that provides additional content for use while rendering the
+resource. Examples include an image to show while a duration-only Canvas is playing audio; or background audio to play
+while a user is navigating an image-only Manifest.
+
+Only audio files have this currently. For more information about this, see details in the work type definition.
+
+See `3.1 Descriptive Properties: accompanyingCanvas <https://iiif.io/api/presentation/3.0/#accompanyingCanvas>`_ for more
+information.
