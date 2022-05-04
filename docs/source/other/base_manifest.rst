@@ -1,6 +1,8 @@
 Base Manifest
 =============
 
+.. _Base Manifest Properties:
+
 About
 -----
 
