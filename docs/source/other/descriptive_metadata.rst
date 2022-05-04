@@ -1,16 +1,47 @@
+.. _Descriptive Metadata Properties:
+
 Descriptive Metadata
 ====================
 
-IIIF is not simply about structural metadata.  It includes numerous types of metadata including descriptive metadata.
+Descriptive metadata in our various work types is done consistently.  Our current metadata mapping is:
 
-This document describes descriptive metadata in IIIF v2.1.1 and v3.0.0 and how it relates to our current and future
-descriptive metadata.
++------------------------+-------------------------------------------------------------------------+
+| Label                  | Expression                                                              |
++========================+=========================================================================+
+| Alternative Title      | titleInfo[@type="alternative"]                                          |
++------------------------+-------------------------------------------------------------------------+
+| Table of Contents      | tableOfContents                                                         |
++------------------------+-------------------------------------------------------------------------+
+| Publisher              | originInfo/publisher                                                    |
++------------------------+-------------------------------------------------------------------------+
+| Date                   | originInfo/dateCreated|originInfo/dateOther                             |
++------------------------+-------------------------------------------------------------------------+
+| Publication Date       | originInfo/dateIssued                                                   |
++------------------------+-------------------------------------------------------------------------+
+| Format                 | physicalDescription/form[not(@type="material")]                         |
++------------------------+-------------------------------------------------------------------------+
+| Extent                 | physicalDescription/extent                                              |
++------------------------+-------------------------------------------------------------------------+
+| Subject                | subject[not(@displayLabel="Narrator Class")]/topic                      |
++------------------------+-------------------------------------------------------------------------+
+| Narrator Role          | subject[@displayLabel="Narrator Class"]/topic                           |
++------------------------+-------------------------------------------------------------------------+
+| Place                  | subject/geographic                                                      |
++------------------------+-------------------------------------------------------------------------+
+| Time Period            | subject/temporal                                                        |
++------------------------+-------------------------------------------------------------------------+
+| Description            | abstract[not(@lang)]                                                    |
++------------------------+-------------------------------------------------------------------------+
+| Descripción            | abstract[@lang="spa"]                                                   |
++------------------------+-------------------------------------------------------------------------+
+| Titulo                 | titleInfo[@lang="spa"]/title                                            |
++------------------------+-------------------------------------------------------------------------+
+| Publication Identifier | identifier[@type="isbn"]||identifier[@type="issn"]                      |
++------------------------+-------------------------------------------------------------------------+
+| Browse                 | note[@displayLabel="Browse"]                                            |
++------------------------+-------------------------------------------------------------------------+
+| Language               | language/languageTerm                                                   |
++------------------------+-------------------------------------------------------------------------+
+| *Role Term*            | mods:name[mods:role[mods:roleTerm[text()='{$ROLETERM}']]]/mods:namePart |
++------------------------+-------------------------------------------------------------------------+
 
-Mapping UTK MODS to IIIF v2.1.1
--------------------------------
-
-Mapping UTK MODS to IIIF v3.0.0
--------------------------------
-
-Mapping UTK MODS to RDF to IIIF v3.0.0
---------------------------------------
