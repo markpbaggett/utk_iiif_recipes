@@ -1,7 +1,7 @@
+.. _Base Manifest Properties:
+
 Base Manifest
 =============
-
-.. _Base Manifest Properties:
 
 About
 -----
