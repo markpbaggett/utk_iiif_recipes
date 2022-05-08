@@ -54,7 +54,7 @@ Viewing Experience
 
 Collections work slightly differently than other manifests in IIIF viewers:
 
-.. figure:: ../images/rfta_art_curated_bloom.gif
+.. figure:: ../images/rfta_curated_art_bloom.gif
     :alt: RFTA Curated Art in Bloom
 
 .. figure:: ../images/rfta_curated_art_mirador.png
