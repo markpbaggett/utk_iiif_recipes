@@ -1,0 +1,1015 @@
+{
+  "@context": [
+    "https:\/\/iiif.io\/api\/presentation\/3\/context.json"
+  ],
+  "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Interview with Julia Rodriguez, 2021-03-03"
+    ]
+  },
+  "summary": {
+    "en": [
+      "In this interview Julia Rodriguez, a Honduran native and Gatlinburg resident since 2000, tells us of the hours leading up to her evacuation and the fear filled drive her family experienced while leaving Gatlinburg as hills and homes burned down around them. Julia talks about how her sister lost her home in the fires and explains the aftermath of Gatlinburg residents dealing with a housing and employment crisis exacerbated by the fires. Julia also talks about the toll the fires had on this Hispanic community and the possible good that came of it. This is a representative quote from the interview: \"\u201c\u2026that traumatizes you for the rest of your life. It's horrible, to see that you're at, the mouth of death. You don't know if you're living your final moments, and to see my son crying saying 'mommy, we're not going to make it.' I had no choice but to try and get out.\n   "
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Date"
+        ]
+      },
+      "value": {
+        "en": [
+          "2021-03-03"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Format"
+        ]
+      },
+      "value": {
+        "en": [
+          "motion pictures (visual works)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Extent"
+        ]
+      },
+      "value": {
+        "en": [
+          "00:47:31"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Subject"
+        ]
+      },
+      "value": {
+        "en": [
+          "Immigrants",
+          "Hondurans",
+          "Evacuation of civilians",
+          "COVID-19 Pandemic, 2020-",
+          "Wildfires"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Narrator Role"
+        ]
+      },
+      "value": {
+        "en": [
+          "Individuals (tourists or locals) directly affected by the fire"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Place"
+        ]
+      },
+      "value": {
+        "en": [
+          "Honduras",
+          "Rocky Top",
+          "Pi Beta Phi Elementary School",
+          "Parkway (US-321\/US 441 S)",
+          "Newport",
+          "Pittman Center Elementary School"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Description"
+        ]
+      },
+      "value": {
+        "en": [
+          "In this interview Julia Rodriguez, a Honduran native and Gatlinburg resident since 2000, tells us of the hours leading up to her evacuation and the fear filled drive her family experienced while leaving Gatlinburg as hills and homes burned down around them. Julia talks about how her sister lost her home in the fires and explains the aftermath of Gatlinburg residents dealing with a housing and employment crisis exacerbated by the fires. Julia also talks about the toll the fires had on this Hispanic community and the possible good that came of it. This is a representative quote from the interview: \"\u201c\u2026that traumatizes you for the rest of your life. It's horrible, to see that you're at, the mouth of death. You don't know if you're living your final moments, and to see my son crying saying 'mommy, we're not going to make it.' I had no choice but to try and get out.\n   "
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Descripci\u00f3n"
+        ]
+      },
+      "value": {
+        "en": [
+          "En esta entrevista Julia Rodr\u00edguez, una nativa de Honduras y residente de Gatlinburg desde el 2000, nos cuenta sobre las horas antes de su evacuaci\u00f3n y el viaje aterrador que vivi\u00f3 su familia mientras conduc\u00edan fuera de Gatlinburg mientras casas y colinas se quemaban a su alrededor. Julia habla sobre como su hermana perdi\u00f3 su casa en los incendios y explica como los residentes de Gatlinburg tuvieron que lidiar con una crisis de vivienda y empleo agravada por los incendios. Julia tambi\u00e9n habla sobre los efectos que tuvieron los incendios en la comunidad Hispana y posiblemente lo positivo que resulto de todo lo ocurrido. Esta es una cita representativa de la entrevista: \"\u2026eso te trauma el resto de tu vida. Es horrible, ver que est\u00e1s en, la boca de la muerte. No sabes si est\u00e1s viviendo tus \u00faltimos momentos, y ver a mi hijo llorando que dice 'mami, no lo lograremos.' Pero yo no ten\u00eda opci\u00f3n m\u00e1s que tratar de salir.\u201d\n   "
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "T\u00edtulo"
+        ]
+      },
+      "value": {
+        "en": [
+          "Entrevista con Julia Rodriguez, 2021-03-03"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Language"
+        ]
+      },
+      "value": {
+        "en": [
+          "Spanish"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Interviewee"
+        ]
+      },
+      "value": {
+        "en": [
+          "Rodriguez, Julia"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Interviewer"
+        ]
+      },
+      "value": {
+        "en": [
+          "Rivera, Christian David"
+        ]
+      }
+    }
+  ],
+  "rights": "http:\/\/creativecommons.org\/licenses\/by\/4.0\/rdf",
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Provided by"
+      ]
+    },
+    "value": {
+      "en": [
+        "University of Tennessee, Knoxville. Libraries"
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https:\/\/www.lib.utk.edu\/about\/",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "University of Tennessee, Knoxville. Libraries"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https:\/\/www.lib.utk.edu\/",
+          "type": "Text",
+          "label": {
+            "en": [
+              "University of Tennessee Libraries Homepage"
+            ]
+          },
+          "format": "text\/html"
+        }
+      ],
+      "logo": [
+        {
+          "id": "https:\/\/utkdigitalinitiatives.github.io\/iiif-level-0\/ut_libraries_centered\/full\/full\/0\/default.jpg",
+          "type": "Image",
+          "format": "image\/jpeg",
+          "width": 200,
+          "height": 200
+        }
+      ]
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A165~datastream~TN\/full\/max\/0\/default.jpg",
+      "width": 400,
+      "height": 400,
+      "service": [
+        {
+          "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A165~datastream~TN",
+          "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+          "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+        }
+      ],
+      "duration": 2851,
+      "type": "Image",
+      "format": "image\/jpeg"
+    },
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rfta%3A165\/datastream\/MP4\/#t=60,75",
+      "type": "Video",
+      "format": "video\/mp4",
+      "width": 200,
+      "height": 200,
+      "duration": 15
+    }
+  ],
+  "items": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas\/0",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Interview with Julia Rodriguez, 2021-03-03"
+        ]
+      },
+      "thumbnail": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A165~datastream~TN\/full\/max\/0\/default.jpg",
+          "width": 400,
+          "height": 400,
+          "service": [
+            {
+              "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A165~datastream~TN",
+              "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+              "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+            }
+          ],
+          "duration": 2851,
+          "type": "Image",
+          "format": "image\/jpeg"
+        },
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rfta%3A165\/datastream\/MP4\/#t=60,75",
+          "type": "Video",
+          "format": "video\/mp4",
+          "width": 200,
+          "height": 200,
+          "duration": 15
+        }
+      ],
+      "height": 640,
+      "width": 360,
+      "duration": 2851,
+      "items": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas\/0\/page\/rfta%3A165",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas\/0\/page\/rfta%3A165\/627e885c18541",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rfta%3A165\/datastream\/MP4",
+                "type": "Video",
+                "width": 640,
+                "height": 360,
+                "duration": 2851,
+                "format": "video\/mp4"
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas\/0"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas\/0\/page\/annotation\/rfta%3A165",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas\/0\/page\/annotation\/rfta%3A165\/627e885c498e2",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rfta%3A165\/datastream\/TRANSCRIPT",
+                "type": "Text",
+                "format": "text\/vtt",
+                "label": {
+                  "en": [
+                    "Captions in English"
+                  ]
+                },
+                "language": "en"
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas\/0"
+            },
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas\/0\/page\/annotation\/rfta%3A165\/627e885c498eb",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rfta%3A165\/datastream\/TRANSCRIPT-ES",
+                "type": "Text",
+                "format": "text\/vtt",
+                "label": {
+                  "es": [
+                    "Subt\u00edtulos en espa\u00f1ol"
+                  ]
+                },
+                "language": "es"
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas\/0"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rfta%3A165\/datastream\/MODS",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "Bibliographic Description in MODS"
+        ]
+      },
+      "format": "application\/xml",
+      "profile": "http:\/\/www.loc.gov\/standards\/mods\/v3\/mods-3-5.xsd"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/collection\/collections\/rfta",
+      "type": "Collection"
+    },
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/collection\/collections\/rftatest",
+      "type": "Collection"
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https:\/\/rfta.lib.utk.edu\/interviews\/object\/julia-rodriguez-2021-03-03",
+      "label": {
+        "en": [
+          "Interview with Julia Rodriguez, 2021-03-03"
+        ]
+      },
+      "type": "Text",
+      "format": "text\/html"
+    }
+  ],
+  "structures": [
+    {
+      "type": "Range",
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista",
+      "label": {
+        "en": [
+          "Preguntas de entrevista"
+        ]
+      },
+      "items": [
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/0",
+          "label": {
+            "en": [
+              "Me puede decir por favor su nombre?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:01:07,00:01:15"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/3",
+          "label": {
+            "en": [
+              "Tiempo ha vivido en Gatlinburg, y nos puede contar como lleg\u00f3 al \u00e1rea, de donde es usted originalmente?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:01:15,00:01:51"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/6",
+          "label": {
+            "en": [
+              "Nos puede hablar un poco sobre su vida en Gatlinburg por ejemplo, tiene familia en el \u00e1rea? En que trabaja y, como usted se ha integrado en la comunidad?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:01:51,00:03:55"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/9",
+          "label": {
+            "en": [
+              "Muy bien y, nos puede describir su hogar y la parte de la ciudad en la que viv\u00eda, o todav\u00eda vive, antes de que pasaran los incendios?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:03:55,00:14:31"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/12",
+          "label": {
+            "en": [
+              "En los d\u00edas, antes del, de que pasaran los incendios, o esa ma\u00f1ana antes de, de que comenzara todo, usted hab\u00eda notado humo? Ya, ya dijo usted verdad que no hab\u00eda escuchado ning\u00fan reporte de la ciudad. Pero hab\u00eda notado usted humo? Y en qu\u00e9 momento usted se empez\u00f3 a preocupar?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:14:31,00:17:46"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/15",
+          "label": {
+            "en": [
+              "Y, usted d\u00f3nde estaba cuando se dio cuenta que hab\u00eda un incendio forestal arrasando con Gatlinburg, y cu\u00e1l fue su, reacci\u00f3n inicial?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:17:46,00:23:17"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/18",
+          "label": {
+            "en": [
+              "Y, despu\u00e9s de la evacuaci\u00f3n, de Gatlinburg, cu\u00e1l fue su experiencia mientras esperaban que, los dejaran regresar a la ciudad?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:23:17,00:25:12"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/20",
+          "label": {
+            "en": [
+              "C\u00f3mo se mantuvo en contacto con su familia y amigos despu\u00e9s de los incendios? Podr\u00eda decirnos si las redes sociales jugaron un papel importante en, mantenerse en comunicaci\u00f3n?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:25:12,00:26:01"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/22",
+          "label": {
+            "en": [
+              "Nos puede describir como fue el regreso a Gatlinburg despu\u00e9s de los incendios? C\u00f3mo fue ver a sus amigos o vecinos por primera vez? Y la experiencia de, de volver a, al trabajo o a la iglesia? Cu\u00e1l fue la experiencia?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:26:01,00:28:04"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/24",
+          "label": {
+            "en": [
+              "C\u00f3mo evaluar\u00eda usted, los esfuerzos de rescate y ayuda? Por ejemplo, los primeros auxilios, o los oficiales de la ciudad? O FEMA, o voluntarios? Cu\u00e1l es su evaluaci\u00f3n de, de c\u00f3mo ellos manejaron la situaci\u00f3n?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:28:04,00:31:28"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/26",
+          "label": {
+            "en": [
+              "Emocionalmente, como le ha impact- impactado ese incidente a usted? Desde su punto de vista, c\u00f3mo influy\u00f3, el incendio las relaciones comunitarias?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:31:28,00:33:29"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/28",
+          "label": {
+            "en": [
+              "Ha pensado o hecho alg\u00fan plan, si en el futuro alg\u00fan incidente similar como ese, vuelve a pasar?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:33:29,00:36:12"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/30",
+          "label": {
+            "en": [
+              "Hay algo sorprendente o algo bueno que haya resultado, de este incidente?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:36:12,00:37:34"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/32",
+          "label": {
+            "en": [
+              "Hay algo sorprendente o algo bueno que haya resultado, de este incidente?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:37:34,00:38:37"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/34",
+          "label": {
+            "en": [
+              "Tambi\u00e9n entendemos verdad que, los incendios afectaron a todos. Sin, sin importar si es Americano o Hispano, o de otra raza. Pero espec\u00edficamente, c\u00f3mo cree usted que afect\u00f3, los incendios a la comunidad Hispana, en Gatlinburg?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:38:37,00:41:56"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/36",
+          "label": {
+            "en": [
+              "Mencion\u00f3 antes verdad que, que Gatlinburg, tiene un problema de trabajadores, y tambi\u00e9n de de vivienda. Cree usted verdad que, que los incendios, empeoraron esto?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:41:56,00:43:46"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/preguntas_de_entrevista\/38",
+          "label": {
+            "en": [
+              "Y, ahora le quiero dar la oportunidad, de, si quiere decir algo sobre los incendios que a\u00fan no hemos tenido la oportunidad de, de mencionar. Si hay algo que quiere decir sobre sobre el tema, verdad. Puede, puede hablarnos de lo que sea."
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:43:46,00:47:31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Range",
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions",
+      "label": {
+        "en": [
+          "Interview Questions"
+        ]
+      },
+      "items": [
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/1",
+          "label": {
+            "en": [
+              "Can you tell me your name please?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:01:07,00:01:15"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/4",
+          "label": {
+            "en": [
+              "How long have you lived in Gatlinburg and can you tell us how you arrived to the area?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:01:15,00:01:51"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/7",
+          "label": {
+            "en": [
+              "Can you tell us about your life in Gatlinburg, such as your family, employment, or community involvement?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:01:51,00:03:55"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/10",
+          "label": {
+            "en": [
+              "Can you describe your home and the part of town you lived in, or still live in, before the fires happened?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:03:55,00:14:31"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/13",
+          "label": {
+            "en": [
+              "The days before the fires happened or the morning before everything started had you noticed smoke? You already mentioned you hadn't heard any reports from the city. But had you noticed smoke? And in what moment did you start to worry?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:14:31,00:17:46"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/16",
+          "label": {
+            "en": [
+              "And, where were you when you realized that there was a forest fire raging through Gatlinburg, and what was your initial reaction?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:17:46,00:23:17"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/19",
+          "label": {
+            "en": [
+              "And after the evacuation, from Gatlinburg what was your experience while waiting for them to let you return to the city?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:23:17,00:25:12"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/21",
+          "label": {
+            "en": [
+              "How did you keep in contact with your family and friends after the fires? Could you tell us if social media played an important role in maintaining communication?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:25:12,00:26:01"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/23",
+          "label": {
+            "en": [
+              "Can you describe to us what the return to Gatlinburg after the fires was like? What was it like seeing your friends or neighbors for the first time? And the experience of returning to work or church? What was the experience like?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:26:01,00:28:04"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/25",
+          "label": {
+            "en": [
+              "How would you evaluate the help and rescue efforts? For example, first aid or city \u200b\u200bofficials? Or FEMA or volunteers? What is your assessment of how they handled the situation?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:28:04,00:31:28"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/27",
+          "label": {
+            "en": [
+              "Emotionally, how has this incident impacted you? How did this incident affect you financially?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:31:28,00:33:29"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/29",
+          "label": {
+            "en": [
+              "From your point of view, what influence, did the fires have on community relations?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:33:29,00:36:12"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/31",
+          "label": {
+            "en": [
+              "Have you thought or made a plan, if in the future a similar incident like this happens again?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:36:12,00:37:34"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/33",
+          "label": {
+            "en": [
+              "Is there something surprising or something good that came as a result of this incident?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:37:34,00:38:37"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/35",
+          "label": {
+            "en": [
+              "We also understand that the fires affected everyone. Regardless of whether you are American or Hispanic or of another race. But specifically, how do you think the fires affected the Hispanic community in Gatlinburg?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:38:37,00:41:56"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/37",
+          "label": {
+            "en": [
+              "You previously mentioned that Gatlinburg, has a problem with employment, and also housing. Do you believe that the fires worsened this?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:41:56,00:43:46"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/interview_questions\/39",
+          "label": {
+            "en": [
+              "And, now I want to give you the opportunity, of, if you want to say something about the fires we haven't yet had a chance to mention. If there is something you want to say about the topic, right. You can, you can talk to us about anything you'd like."
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:43:46,00:47:31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Range",
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/places_mentioned",
+      "label": {
+        "en": [
+          "Places Mentioned"
+        ]
+      },
+      "items": [
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/places_mentioned\/2",
+          "label": {
+            "en": [
+              "Honduras"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:01:25,00:01:33"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/places_mentioned\/5",
+          "label": {
+            "en": [
+              "Rocky Top"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:04:20,00:04:33"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/places_mentioned\/8",
+          "label": {
+            "en": [
+              "Parkway (US-321\/US 441 S)"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:07:19,00:08:45"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/places_mentioned\/11",
+          "label": {
+            "en": [
+              "Newport"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:07:19,00:08:45"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/places_mentioned\/14",
+          "label": {
+            "en": [
+              "Pittman Center Elementary School"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:10:55,00:11:42"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/range\/places_mentioned\/17",
+          "label": {
+            "en": [
+              "Rocky Top"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/165\/canvas#t=00:18:18,00:19:15"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
