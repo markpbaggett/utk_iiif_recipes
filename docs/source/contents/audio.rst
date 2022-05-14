@@ -1,60 +1,45 @@
 Audio
 =====
 
-Generating a Sample Manifest for a World War II Oral History
-------------------------------------------------------------
+About
+-----
 
-3.0.0 manifests for audio can be generated with for any audio like object using
-`UTK Islandora 7 Manifest Generator <https://github.com/markpbaggett/utk_islandora7_manifest_generator>`_.
+In University of Tennessee Digital Collections, digital objects whose primary file is sound are considered to be Audio.
+Audio works usually consist of a preservation file stored in audio/mpge format with a PROXY_MP3 access copy.
+Like other content models, a :code:`Audio` work may be a part of a :code:`Compound Object`.
 
-This can be run from any machine that has access to the Resource Index url.  No other credentials are required.
+Fedora Model
+------------
 
-The application here is far from perfect and really serves mostly as a proof of concept.  There are bugs and gotchas
-which I'll discuss below.
+Audio works always have structural properties that state their content model and the collections in which they are
+members.  Their files may also have a :code:`bibframe:duration` that state how long they are.
 
-How Does It Work
-----------------
+.. code-block:: turtle
 
-To generate manifests, this content model requires three modules from the :code:`fedora` package and the :code:`Presentation3`
-module from the :code:`iiif` package.
+    @prefix fedora: <info:fedora/fedora-system:def/relations-external#> .
+    @prefix fedora-model: <info:fedora/fedora-system:def/model#> .
+    @prefix islandora: <http://islandora.ca/ontology/relsext#> .
 
-The :code:`fedora` package serves three purposes. The :code:`risearch` module is used to find the content model of the
-object and the collection to which it belongs. This is done with the :code:`TuplesSearch` class. The :code:`mods` module
-includes the :code:`MODSScraper` class which helps populate descriptive metadata elements for the manifest. By design,
-this only works over http and does not use the API. It's also a bit of a mess.  It converts the MODS xml datastream to
-an OrderedDict.  This isn't ideal.  It'd probably be better to interact with this via xpath. Because xpath isn't used,
-the methods need to be considerate of typing. Also, with the exception of specific IIIF metadata elements that are
-defined in the presentation specification, all other metadata elements are done at random as a proof of concept. In
-order to be flexible to the needs to individual institutions, IIIF allows you to define your own descriptive metadata
-elements, and the :code:`MODSScraper` class takes liberties to display certain elements but not all. See the descriptive
-metadata section for recipes related to this. Finally, audio files need a duration element to be defined as a positive
-floating point number in seconds. This is handled by the :code:`TechnicalMetadataScraper` class in the :code:`techhmd`
-module. Because of its preciseness, the :code:`NLNZ Metadata Extractor` tool in :code:`FITS` is currently used as the
-source data.
+    <info:fedora/rfta:156> fedora-model:hasModel <info:fedora/islandora:sp-audioCModel> ;
+        fedora:isMemberOfCollection <info:fedora/collections:rfta> .
 
-The :code:`Manifest3` class in the :code:`presentation3` module is used to build the actual manifest.  This module is
-still a work in progress, but is currently able to build basic manfiests for audio content.
+    <info:fedora/rfta:156/PROXY_MP3> bibframe:duration "00:20:53" .
 
-Generating a 3.0.0 Audio Manifest
----------------------------------
+If they are parts of compound objects or have restrictions, they may also have additional properties.
 
-This application can be installed on any machine that has access to the RISearch interface. You can install this various
-ways, but the easiest is most likely with `pipenv <https://github.com/pypa/pipenv>`_.
+IIIF Manifest
+-------------
 
-Once you've installed the application in a virtual environment with pipenv, you can generate a manifest by activating
-the virtual environment and running the script like below.
+The IIIF manifest for an :code:`Audio` work inherits the basic format for other manifests. For more information, see
+:ref:`Base Manifest Properties`.
 
-.. code-block:: shell
+This manifest is very similar to that of a video but with slightly few parts.
 
-    pipenv shell
-    python run.py -p wwiioh:2001 -f manifest.json -r http://localhost:8080/fedora/risearch -s https://digital.lib.utk.edu
+The :code:`items` property of the manifest for an Audio work has one canvas that points at the :code:`PROXY_MP3`
+datastream. The :code:`Canvas` should have :code:`id`, :code:`type`, :code:`label`, :code:`thumbnail`, :code:`width`,
+:code:`height`, :code:`duration`, :code:`items`, and :code:`annotations` properties following the IIIF Presentation v3
+specification.
 
-A Sample Audio Manifest
------------------------
 
-* `View in Mirador <https://projectmirador.org/embed/?iiif-content=https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/wwiioh:2001.json>`_
-* View in Universal Viewer
-
-.. literalinclude:: ../../../raw_manifests/wwiioh:2001.json
-    :language: json
-    :linenos:
+Viewing Experience
+------------------
