@@ -1,57 +1,100 @@
-Books
-=====
+Books and Pages
+===============
 
-Generating A Sample 2.1.1 Book Manifest
----------------------------------------
+About
+-----
 
-2.1.1 manifests can be generated for any book like object using
-`UTK Islandora 7 Manifest Generator <https://github.com/markpbaggett/utk_islandora7_manifest_generator>`_.
-This can be run from any machine that has access to the Resource Index url.  No other credentials are required.
+In University of Tennessee Digital Collections, digital objects that are made up of many works that cannot stand on
+their own and are ordered are called :code:`Books`.  :code:`Books` are considered to be paged and should be displayed
+two up in a page turning viewer.  :code:`Books` are different from :code:`Compound Objects` in that books only consist of
+:code:`Page` works that cannot live on their own while compound objects can be made up of any work type. While :code:`Pages`
+should be indexed, they should not be described in an OAI record or listed as a member of a IIIF collection. Similarly,
+a :code:`Page` can be represented by a manifest but should only be :code:`partOf` a :code:`Book`.
 
-The application here is far from perfect and really serves mostly as a proof of concept.  There are bugs and gotchas
-which I'll discuss below.
+Fedora Model
+------------
 
-How Does It Work
-^^^^^^^^^^^^^^^^
+Book works have properties that express they are a book and which collections they belong to.  If a PDF was generated on
+ingest, it will also have a property stating this.  Ideally, this PDF would be available in the IIIF manifest but isn't
+currently. The page has properties stating that it is a :code:`Page` work, the book it is a member of, where it appears in
+the book, and whether or not there is related OCR / HOCR.
 
-Currently, this application consists of two packages: :code:`fedora` and :code:`iiif`. The :code:`fedora` package serves
-two purposes for books:  finding relationships to other Fedora objects and scraping descriptive metadata.
+.. code-block:: turtle
 
-Finding relationships is done via the :code:`risearch` module. There are multiple classes here, but the one of primary
-interest in :code:`TuplesSearch`. :code:`TuplesSearch` allows us to find out what collection a book belongs to, if its a
-book and get an ordered list of page objects that relate to that book.
+    @prefix fedora: <info:fedora/fedora-system:def/relations-external#> .
+    @prefix fedora-model: <info:fedora/fedora-system:def/model#> .
+    @prefix islandora: <http://islandora.ca/ontology/relsext#> .
 
-Scraping descriptive metadata is done with the :code:`ModsScraper` class in the :code:`mods` module. By design, this only
-works over http and does not use the API. It's also a bit of a mess.  It converts the MODS xml datastream to an
-OrderedDict.  This isn't ideal.  It'd probably be better to interact with this via xpath. Because xpath isn't used, the
-methods need to be considerate of typing.  This is done in certain cases (i.e. :code:`get_navigation_date()`), but not
-always.  Because of this, there are probably records in our repository that would throw an exception. Also, descriptive
-metadata that is scraped is done so at random and is definitely not exhaustive. Any contributions here would be welcomed.
+    <info:fedora/ascoop:1507160011> islandora:create_pdf "true" ;
+        fedora-model:hasModel <info:fedora/islandora:bookCModel> ;
+        fedora:isMemberOfCollection <info:fedora/collections:ascoop> .
 
-The :code:`iiif` package includes the :code:`manifest` module.  The :code:`manifest` module generates 2.1.1 manifests.
-The classes here are used to build the presentation manifest and its various canvases.
+    <info:fedora/ascoop:1507160012> islandora:generate_ocr "TRUE" ;
+        islandora:isPageNumber "1" ;
+        islandora:isPageOf <info:fedora/ascoop:1507160011> ;
+        islandora:isSection "1" ;
+        islandora:isSequenceNumber "1" ;
+        fedora-model:hasModel <info:fedora/islandora:pageCModel> ;
+        fedora:isMemberOf <info:fedora/ascoop:1507160011> .
 
-Generating a Book Manifest
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+IIIF Manifest
+-------------
 
-This application can be installed on any machine that has access to the RISearch interface. You can install this various
-ways, but the easiest is most likely with `pipenv <https://github.com/pypa/pipenv>`_.
+:code:`Book` works are the only work type that have a :code:`behavior` of :code:`paged`.
 
-Once you've installed the application in a virtual environment with pipenv, you can generate a manifest by activating
-the virtual environment and running the script like below.
-
-.. code-block:: shell
-
-    pipenv shell
-    python run.py -p agrtfhs:2275 -f manifest.json -r http://localhost:8080/fedora/risearch -s https://digital.lib.utk.edu
-
-
-A Sample Book Manifest
-^^^^^^^^^^^^^^^^^^^^^^
-
-* `View in Universal Viewer <http://universalviewer.io/uv.html?manifest=https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/sample_book.json>`_
-* `View in Mirador <https://projectmirador.org/embed/?iiif-content=https://raw.githubusercontent.com/markpbaggett/utk_iiif_recipes/main/raw_manifests/sample_book.json>`_
-
-.. literalinclude:: ../../../raw_manifests/sample_book.json
+.. literalinclude:: ../fixtures/ascoop_book.json
     :language: json
     :linenos:
+    :lines: 479-481
+
+:code:`Book` works and :code:`CompoundObject` works are different from other manifests in that they consist of multiple
+:code:`Canvases`. In the :code:`items` property, each :code:`Page` work is a :code:`Canvas`. Each :code:`Canvas` has the
+following properties:  :code:`id`, :code:`type`, :code:`label`, :code:`width`, :code:`height`, :code:`thumbnail`,
+:code:`items`, and :code:`seeAlso`.
+
+A unique :code:`id` for representing the :code:`Canvas` is generated with the appropriate :code:`type`. The :code:`label`
+is the value of :code:`fgsLabel` of the page, while :code:`width`, :code:`height`, and :code:`thumbnail` are generated
+by the Cantaloupe response for the size and services related to the :code:`TN` datastream.
+
+.. literalinclude:: ../fixtures/ascoop_book.json
+    :language: json
+    :linenos:
+    :lines: 195-220,257
+
+
+The :code:`items` property should have 1 :code:`AnnotationPage` with 1 :code:`Annotation`.  The :code:`Annotation` should
+have a :code:`motivation` of :code:`painting` based on the :code:`JP2` datastream that targets the :code:`Canvas`.
+
+.. literalinclude:: ../fixtures/ascoop_book.json
+    :language: json
+    :linenos:
+    :lines: 194-197,220-248, 257, 447
+    :emphasize-lines: 3, 27
+
+Each :code:`Canvas` also has a :seeAlso: property that points at the page's :code:`HOCR`:
+
+.. literalinclude:: ../fixtures/ascoop_book.json
+    :language: json
+    :linenos:
+    :lines: 249-256
+
+Viewing Experience
+------------------
+
+Our books should be rendered appropriately in a variety of viewers.
+
+In Clover, books are rendered but not paged since Clover does not support two up.
+
+.. figure:: ../images/airscoop_clover.png
+    :alt: Airscoop in Clover
+
+In Mirador, books are paged.
+
+.. figure:: ../images/airscoop_mirador.png
+    :alt: Airscoop in Mirador
+
+In Universal Viewer, books are rendered but not paged by default. Universal Viewer instead shows everything as individuals
+with the option for two up.
+
+.. figure:: ../images/airscoop_uv.png
+    :alt: Airscoop in Universal Viewer

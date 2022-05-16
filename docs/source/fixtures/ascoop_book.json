@@ -1,0 +1,482 @@
+{
+  "@context": [
+    "https:\/\/iiif.io\/api\/presentation\/3\/context.json"
+  ],
+  "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Air scoop : 63rd C.T.D., hot pilot. Volume 1, Number 3"
+    ]
+  },
+  "summary": {
+    "en": [
+      "Weekly newsletter created for and by aviation students during WWII in order to unify the university and share news related to military training and social events occurring around the Knoxville campus."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Publisher"
+        ]
+      },
+      "value": {
+        "en": [
+          "University of Tennessee"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Date"
+        ]
+      },
+      "value": {
+        "en": [
+          "10\/23\/1943",
+          "1943-10-23"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Format"
+        ]
+      },
+      "value": {
+        "en": [
+          "periodicals"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Extent"
+        ]
+      },
+      "value": {
+        "en": [
+          "4 pages"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Subject"
+        ]
+      },
+      "value": {
+        "en": [
+          "College student newspapers and periodicals",
+          "World War, 1939-1945",
+          "College students' writings",
+          "Military cadets",
+          "Military education",
+          "Air pilots"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Place"
+        ]
+      },
+      "value": {
+        "en": [
+          "Knoxville (Tenn.)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Description"
+        ]
+      },
+      "value": {
+        "en": [
+          "Weekly newsletter created for and by aviation students during WWII in order to unify the university and share news related to military training and social events occurring around the Knoxville campus."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Language"
+        ]
+      },
+      "value": {
+        "en": [
+          "eng"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Creator"
+        ]
+      },
+      "value": {
+        "en": [
+          "United States. Army Air Forces. College Training Detachment, 63rd"
+        ]
+      }
+    }
+  ],
+  "rights": "http:\/\/rightsstatements.org\/vocab\/NoC-US\/1.0\/",
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Provided by"
+      ]
+    },
+    "value": {
+      "en": [
+        "University of Tennessee, Knoxville. Libraries"
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https:\/\/www.lib.utk.edu\/about\/",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "University of Tennessee, Knoxville. Libraries"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https:\/\/www.lib.utk.edu\/",
+          "type": "Text",
+          "label": {
+            "en": [
+              "University of Tennessee Libraries Homepage"
+            ]
+          },
+          "format": "text\/html"
+        }
+      ],
+      "logo": [
+        {
+          "id": "https:\/\/utkdigitalinitiatives.github.io\/iiif-level-0\/ut_libraries_centered\/full\/full\/0\/default.jpg",
+          "type": "Image",
+          "format": "image\/jpeg",
+          "width": 200,
+          "height": 200
+        }
+      ]
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop%3A1507160011~datastream~TN\/full\/max\/0\/default.jpg",
+      "width": 126,
+      "height": 200,
+      "service": [
+        {
+          "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop%3A1507160011~datastream~TN",
+          "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+          "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+        }
+      ],
+      "type": "Image",
+      "format": "image\/jpeg"
+    }
+  ],
+  "items": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/0",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "\"Air scoop : 63rd C.T.D."
+        ]
+      },
+      "width": 3091,
+      "height": 4904,
+      "thumbnail": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160012~datastream~TN\/full\/max\/0\/default.jpg",
+          "width": 126,
+          "height": 200,
+          "service": [
+            {
+              "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160012~datastream~TN",
+              "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+              "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+            }
+          ],
+          "type": "Image",
+          "format": "image\/jpeg"
+        }
+      ],
+      "items": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/0\/page\/ascoop:1507160012",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/0\/page\/ascoop:1507160012\/627d06f187dab",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160012~datastream~JP2\/full\/full\/0\/default.jpg",
+                "type": "Image",
+                "width": 3091,
+                "height": 4904,
+                "format": "image\/jpeg",
+                "service": [
+                  {
+                    "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160012~datastream~JP2",
+                    "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+                    "profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+                  }
+                ]
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/0"
+            }
+          ]
+        }
+      ],
+      "seeAlso": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/ascoop:1507160012\/datastream\/HOCR",
+          "motivation": "supplementing",
+          "format": "text\/vnd.hocr+html",
+          "profile": "http:\/\/kba.cloud\/hocr-spec\/1.2\/"
+        }
+      ]
+    },
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/1",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "\"Air scoop : 63rd C.T.D."
+        ]
+      },
+      "width": 3122,
+      "height": 4842,
+      "thumbnail": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160013~datastream~TN\/full\/max\/0\/default.jpg",
+          "width": 129,
+          "height": 200,
+          "service": [
+            {
+              "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160013~datastream~TN",
+              "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+              "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+            }
+          ],
+          "type": "Image",
+          "format": "image\/jpeg"
+        }
+      ],
+      "items": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/1\/page\/ascoop:1507160013",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/1\/page\/ascoop:1507160013\/627d06f20e12c",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160013~datastream~JP2\/full\/full\/0\/default.jpg",
+                "type": "Image",
+                "width": 3122,
+                "height": 4842,
+                "format": "image\/jpeg",
+                "service": [
+                  {
+                    "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160013~datastream~JP2",
+                    "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+                    "profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+                  }
+                ]
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/1"
+            }
+          ]
+        }
+      ],
+      "seeAlso": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/ascoop:1507160013\/datastream\/HOCR",
+          "motivation": "supplementing",
+          "format": "text\/vnd.hocr+html",
+          "profile": "http:\/\/kba.cloud\/hocr-spec\/1.2\/"
+        }
+      ]
+    },
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/2",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "\"Air scoop : 63rd C.T.D."
+        ]
+      },
+      "width": 3134,
+      "height": 4836,
+      "thumbnail": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160014~datastream~TN\/full\/max\/0\/default.jpg",
+          "width": 130,
+          "height": 200,
+          "service": [
+            {
+              "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160014~datastream~TN",
+              "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+              "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+            }
+          ],
+          "type": "Image",
+          "format": "image\/jpeg"
+        }
+      ],
+      "items": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/2\/page\/ascoop:1507160014",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/2\/page\/ascoop:1507160014\/627d06f28661d",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160014~datastream~JP2\/full\/full\/0\/default.jpg",
+                "type": "Image",
+                "width": 3134,
+                "height": 4836,
+                "format": "image\/jpeg",
+                "service": [
+                  {
+                    "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160014~datastream~JP2",
+                    "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+                    "profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+                  }
+                ]
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/2"
+            }
+          ]
+        }
+      ],
+      "seeAlso": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/ascoop:1507160014\/datastream\/HOCR",
+          "motivation": "supplementing",
+          "format": "text\/vnd.hocr+html",
+          "profile": "http:\/\/kba.cloud\/hocr-spec\/1.2\/"
+        }
+      ]
+    },
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/3",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "\"Air scoop : 63rd C.T.D."
+        ]
+      },
+      "width": 3110,
+      "height": 4830,
+      "thumbnail": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160015~datastream~TN\/full\/max\/0\/default.jpg",
+          "width": 129,
+          "height": 200,
+          "service": [
+            {
+              "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160015~datastream~TN",
+              "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+              "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+            }
+          ],
+          "type": "Image",
+          "format": "image\/jpeg"
+        }
+      ],
+      "items": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/3\/page\/ascoop:1507160015",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/3\/page\/ascoop:1507160015\/627d06f30a1f2",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160015~datastream~JP2\/full\/full\/0\/default.jpg",
+                "type": "Image",
+                "width": 3110,
+                "height": 4830,
+                "format": "image\/jpeg",
+                "service": [
+                  {
+                    "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~ascoop:1507160015~datastream~JP2",
+                    "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+                    "profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+                  }
+                ]
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/ascoop\/1507160011\/canvas\/3"
+            }
+          ]
+        }
+      ],
+      "seeAlso": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/ascoop:1507160015\/datastream\/HOCR",
+          "motivation": "supplementing",
+          "format": "text\/vnd.hocr+html",
+          "profile": "http:\/\/kba.cloud\/hocr-spec\/1.2\/"
+        }
+      ]
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/ascoop%3A1507160011\/datastream\/MODS",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "Bibliographic Description in MODS"
+        ]
+      },
+      "format": "application\/xml",
+      "profile": "http:\/\/www.loc.gov\/standards\/mods\/v3\/mods-3-5.xsd"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/collection\/collections\/ascoop",
+      "type": "Collection"
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/ascoop%3A1507160011",
+      "label": {
+        "en": [
+          "Air scoop : 63rd C.T.D., hot pilot. Volume 1, Number 3"
+        ]
+      },
+      "type": "Text",
+      "format": "text\/html"
+    }
+  ],
+  "behavior": [
+    "paged"
+  ]
+}
