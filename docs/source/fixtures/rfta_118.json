@@ -1,0 +1,601 @@
+{
+  "@context": [
+    "https:\/\/iiif.io\/api\/presentation\/3\/context.json"
+  ],
+  "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Interview with Andrea Ludden, 2017-02-06"
+    ]
+  },
+  "summary": {
+    "en": [
+      "Interview with Andrea Ludden, administrator of the Salt & Pepper Museum and Gatlinburg resident. Ludden discusses the the time prior to leaving her home, the evacuation experience, and the return to Gatlinburg to assess damages. Ludden recalls the community efforts that brought people together after the Chimney Tops II Wildfires. This is a representative quote from the interview: \"After this, I didn't realize how connected we were in the community.\""
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Date"
+        ]
+      },
+      "value": {
+        "en": [
+          "2017-02-06"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Format"
+        ]
+      },
+      "value": {
+        "en": [
+          "interviews"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Extent"
+        ]
+      },
+      "value": {
+        "en": [
+          "00:39:09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Subject"
+        ]
+      },
+      "value": {
+        "en": [
+          "Evacuation of civilians",
+          "Wildfires"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Narrator Role"
+        ]
+      },
+      "value": {
+        "en": [
+          "Individuals\/families suffering losses"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Place"
+        ]
+      },
+      "value": {
+        "en": [
+          "Gatlinburg",
+          "Cherry Street",
+          "Pigeon Forge Community Center",
+          "Rocky Top Sports World"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Description"
+        ]
+      },
+      "value": {
+        "en": [
+          "Interview with Andrea Ludden, administrator of the Salt & Pepper Museum and Gatlinburg resident. Ludden discusses the the time prior to leaving her home, the evacuation experience, and the return to Gatlinburg to assess damages. Ludden recalls the community efforts that brought people together after the Chimney Tops II Wildfires. This is a representative quote from the interview: \"After this, I didn't realize how connected we were in the community.\""
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Browse"
+        ]
+      },
+      "value": {
+        "en": [
+          "Individuals Directly Affected by the Fire",
+          "Gatlinburg, Sevierville and Pittman Center"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Language"
+        ]
+      },
+      "value": {
+        "en": [
+          "English"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Interviewee"
+        ]
+      },
+      "value": {
+        "en": [
+          "Ludden, Andrea"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Interviewer"
+        ]
+      },
+      "value": {
+        "en": [
+          "Temple, Kenton",
+          "McDonald, Karen"
+        ]
+      }
+    }
+  ],
+  "rights": "http:\/\/rightsstatements.org\/vocab\/InC\/1.0\/",
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Provided by"
+      ]
+    },
+    "value": {
+      "en": [
+        "Anna Porter Public Library"
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https:\/\/www.lib.utk.edu\/about\/",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "University of Tennessee, Knoxville. Libraries"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https:\/\/www.lib.utk.edu\/",
+          "type": "Text",
+          "label": {
+            "en": [
+              "University of Tennessee Libraries Homepage"
+            ]
+          },
+          "format": "text\/html"
+        }
+      ],
+      "logo": [
+        {
+          "id": "https:\/\/utkdigitalinitiatives.github.io\/iiif-level-0\/ut_libraries_centered\/full\/full\/0\/default.jpg",
+          "type": "Image",
+          "format": "image\/jpeg",
+          "width": 200,
+          "height": 200
+        }
+      ]
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A118~datastream~TN\/full\/max\/0\/default.jpg",
+      "width": 134,
+      "height": 200,
+      "service": [
+        {
+          "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A118~datastream~TN",
+          "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+          "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+        }
+      ],
+      "duration": 2349,
+      "type": "Image",
+      "format": "image\/jpeg"
+    }
+  ],
+  "items": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas\/0",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Interview with Andrea Ludden, 2017-02-06"
+        ]
+      },
+      "thumbnail": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A118~datastream~TN\/full\/max\/0\/default.jpg",
+          "width": 134,
+          "height": 200,
+          "service": [
+            {
+              "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A118~datastream~TN",
+              "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+              "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+            }
+          ],
+          "duration": 2349,
+          "type": "Image",
+          "format": "image\/jpeg"
+        }
+      ],
+      "height": 640,
+      "width": 360,
+      "duration": 2349,
+      "items": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas\/0\/page\/rfta%3A118",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas\/0\/page\/rfta%3A118\/628198308bdb8",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rfta%3A118\/datastream\/PROXY_MP3",
+                "type": "Sound",
+                "width": 640,
+                "height": 360,
+                "duration": 2349,
+                "format": "audio\/mpeg"
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas\/0"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas\/0\/page\/annotation\/rfta%3A118",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas\/0\/page\/annotation\/rfta%3A118\/62819830bd30e",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rfta%3A118\/datastream\/TRANSCRIPT",
+                "type": "Text",
+                "format": "text\/vtt",
+                "label": {
+                  "en": [
+                    "Captions in English"
+                  ]
+                },
+                "language": "en"
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas\/0"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rfta%3A118\/datastream\/MODS",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "Bibliographic Description in MODS"
+        ]
+      },
+      "format": "application\/xml",
+      "profile": "http:\/\/www.loc.gov\/standards\/mods\/v3\/mods-3-5.xsd"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/collection\/collections\/rfta",
+      "type": "Collection"
+    },
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/collection\/collections\/rftatest",
+      "type": "Collection"
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https:\/\/rfta.lib.utk.edu\/interviews\/object\/andrea-ludden-2017-02-06",
+      "label": {
+        "en": [
+          "Interview with Andrea Ludden, 2017-02-06"
+        ]
+      },
+      "type": "Text",
+      "format": "text\/html"
+    }
+  ],
+  "accompanyingCanvas": {
+    "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A118~datastream~TN\/info.json\/canvas\/accompanying",
+    "type": "Canvas",
+    "label": {
+      "none": [
+        "Accompanying canvas for Interview with Andrea Ludden, 2017-02-06"
+      ]
+    },
+    "width": 134,
+    "height": 200,
+    "items": [
+      {
+        "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A118~datastream~TN\/info.json\/canvas\/accompanying\/page\/rfta%3A118",
+        "type": "AnnotationPage",
+        "items": [
+          {
+            "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A118~datastream~TN\/info.json\/canvas\/accompanying\/page\/rfta%3A118\/628198311a44a",
+            "type": "Annotation",
+            "motivation": "painting",
+            "body": {
+              "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A118~datastream~TN\/full\/full\/0\/default.jpg",
+              "type": "Image",
+              "width": 134,
+              "height": 200,
+              "format": "image\/jpeg",
+              "service": [
+                {
+                  "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A118~datastream~TN",
+                  "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+                  "profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+                }
+              ]
+            },
+            "target": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rfta%3A118~datastream~TN\/info.json\/canvas\/accompanying"
+          }
+        ]
+      }
+    ]
+  },
+  "structures": [
+    {
+      "type": "Range",
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/interview_questions",
+      "label": {
+        "en": [
+          "Interview Questions"
+        ]
+      },
+      "items": [
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/interview_questions\/0",
+          "label": {
+            "en": [
+              "Can you start at the beginning when you knew something was different?\n"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:00:42,00:20:48"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/interview_questions\/3",
+          "label": {
+            "en": [
+              "So it took all that time to get to the hotel?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:20:48,00:27:54"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/interview_questions\/6",
+          "label": {
+            "en": [
+              "Were these people that stayed there?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:27:54,00:37:20"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/interview_questions\/9",
+          "label": {
+            "en": [
+              "What happened to the family at the end of the street? Did their house burn?"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:37:20,00:39:09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Range",
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/places_mentioned",
+      "label": {
+        "en": [
+          "Places Mentioned"
+        ]
+      },
+      "items": [
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/places_mentioned\/1",
+          "label": {
+            "en": [
+              "Cherry Street"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:01:00,00:12:11"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/places_mentioned\/4",
+          "label": {
+            "en": [
+              "Pigeon Forge Community Center"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:13:01,00:13:21"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/places_mentioned\/7",
+          "label": {
+            "en": [
+              "Rocky Top Sports World"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:13:21,00:15:56"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Range",
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/chapters",
+      "label": {
+        "en": [
+          "Chapters"
+        ]
+      },
+      "items": [
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/chapters\/2",
+          "label": {
+            "en": [
+              "The Day of the Fire"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:00:00,00:07:31"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/chapters\/5",
+          "label": {
+            "en": [
+              "Community Center"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:07:31,00:15:55"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/chapters\/8",
+          "label": {
+            "en": [
+              "Evacuation"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:15:55,00:20:08"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/chapters\/10",
+          "label": {
+            "en": [
+              "The Following Days"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:20:08,00:27:40"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/chapters\/11",
+          "label": {
+            "en": [
+              "Loss"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:27:40,00:31:07"
+            }
+          ]
+        },
+        {
+          "type": "Range",
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/range\/chapters\/12",
+          "label": {
+            "en": [
+              "Restarting"
+            ]
+          },
+          "items": [
+            {
+              "type": "Canvas",
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rfta\/118\/canvas#t=00:31:07,00:39:10"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
