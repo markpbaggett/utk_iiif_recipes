@@ -114,3 +114,13 @@ The Clover viewer offers a similar experience but with no structures or ranges.
 .. figure:: ../images/rfta_audio_clover.png
     :alt: RFTA in Clover
 
+Mirador plays our audio but with no captions, transcripts, or structures and ranges.
+
+.. figure:: ../images/mirador_audio.png
+    :alt: RFTA in Mirador
+
+Our Audio works do not work in Universal Viewer.
+
+.. figure:: ../images/uv_audio.png
+    :alt: RFTA in UV
+
