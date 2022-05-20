@@ -1,0 +1,550 @@
+{
+  "@context": [
+    "https:\/\/iiif.io\/api\/presentation\/3\/context.json"
+  ],
+  "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "Topper"
+    ]
+  },
+  "summary": {
+    "en": [
+      "Both Odunayo and Wereszczak, who work at UT College of Veterinary Medicine, mentioned one particular cat named Topper. He was the most severely burned of nearly 20 \u201cfirecats\u201d that were treated in Emergency Critical Care at UTCVM. Topper had severe face and foot pad burns, but \u201che was a trooper.\u201d He and his owner had a happy reunion three days later. Topper\u2019s story spread and resulted in a Facebook page for people to follow his recovery progress."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Date"
+        ]
+      },
+      "value": {
+        "en": [
+          "2021-2022"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Format"
+        ]
+      },
+      "value": {
+        "en": [
+          "drawings (visual works)",
+          "motion pictures (visual works)"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Subject"
+        ]
+      },
+      "value": {
+        "en": [
+          "Wildfires",
+          "Cats"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Description"
+        ]
+      },
+      "value": {
+        "en": [
+          "Both Odunayo and Wereszczak, who work at UT College of Veterinary Medicine, mentioned one particular cat named Topper. He was the most severely burned of nearly 20 \u201cfirecats\u201d that were treated in Emergency Critical Care at UTCVM. Topper had severe face and foot pad burns, but \u201che was a trooper.\u201d He and his owner had a happy reunion three days later. Topper\u2019s story spread and resulted in a Facebook page for people to follow his recovery progress."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Language"
+        ]
+      },
+      "value": {
+        "en": [
+          "English"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Related Resource"
+        ]
+      },
+      "value": {
+        "en": [
+          "https:\/\/rfta.lib.utk.edu\/interviews\/object\/adesola-odunayo-2020-04-23",
+          "https:\/\/rfta.lib.utk.edu\/interviews\/object\/leslie-wereszczak-2019-12-13"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Artist"
+        ]
+      },
+      "value": {
+        "en": [
+          "Wilson, Danny"
+        ]
+      }
+    }
+  ],
+  "rights": "http:\/\/rightsstatements.org\/vocab\/InC\/1.0\/",
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Provided by"
+      ]
+    },
+    "value": {
+      "en": [
+        "University of Tennessee, Knoxville. Libraries"
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https:\/\/www.lib.utk.edu\/about\/",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "University of Tennessee, Knoxville. Libraries"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https:\/\/www.lib.utk.edu\/",
+          "type": "Text",
+          "label": {
+            "en": [
+              "University of Tennessee Libraries Homepage"
+            ]
+          },
+          "format": "text\/html"
+        }
+      ],
+      "logo": [
+        {
+          "id": "https:\/\/utkdigitalinitiatives.github.io\/iiif-level-0\/ut_libraries_centered\/full\/full\/0\/default.jpg",
+          "type": "Image",
+          "format": "image\/jpeg",
+          "width": 200,
+          "height": 200
+        }
+      ]
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rftaart%3A74~datastream~TN\/full\/max\/0\/default.jpg",
+      "width": 400,
+      "height": 315,
+      "service": [
+        {
+          "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rftaart%3A74~datastream~TN",
+          "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+          "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+        }
+      ],
+      "type": "Image",
+      "format": "image\/jpeg"
+    }
+  ],
+  "items": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/0",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Topper"
+        ]
+      },
+      "width": 4200,
+      "height": 3300,
+      "thumbnail": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rftaart:42~datastream~TN\/full\/max\/0\/default.jpg",
+          "width": 400,
+          "height": 315,
+          "service": [
+            {
+              "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rftaart:42~datastream~TN",
+              "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+              "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+            }
+          ],
+          "type": "Image",
+          "format": "image\/jpeg"
+        }
+      ],
+      "items": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/0\/page\/rftaart:42",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/0\/page\/rftaart:42\/627d672fbb243",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rftaart:42~datastream~JP2\/full\/full\/0\/default.jpg",
+                "type": "Image",
+                "width": 4200,
+                "height": 3300,
+                "format": "image\/jpeg",
+                "service": [
+                  {
+                    "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rftaart:42~datastream~JP2",
+                    "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+                    "profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+                  }
+                ]
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/0"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "en": [
+          "Both Odunayo and Wereszczak, who work at UT College of Veterinary Medicine, mentioned one particular cat named Topper. He was the most severely burned of nearly 20 \u201cfirecats\u201d that were treated in Emergency Critical Care at UTCVM. Topper had severe face and foot pad burns, but \u201che was a trooper.\u201d He and his owner had a happy reunion three days later. Topper\u2019s story spread and resulted in a Facebook page for people to follow his recovery progress."
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Date"
+            ]
+          },
+          "value": {
+            "en": [
+              "2021"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Format"
+            ]
+          },
+          "value": {
+            "en": [
+              "drawings (visual works)"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Subject"
+            ]
+          },
+          "value": {
+            "en": [
+              "Wildfires",
+              "Cats"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "Both Odunayo and Wereszczak, who work at UT College of Veterinary Medicine, mentioned one particular cat named Topper. He was the most severely burned of nearly 20 \u201cfirecats\u201d that were treated in Emergency Critical Care at UTCVM. Topper had severe face and foot pad burns, but \u201che was a trooper.\u201d He and his owner had a happy reunion three days later. Topper\u2019s story spread and resulted in a Facebook page for people to follow his recovery progress."
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Related Resource"
+            ]
+          },
+          "value": {
+            "en": [
+              "https:\/\/rfta.lib.utk.edu\/interviews\/object\/adesola-odunayo-2020-04-23",
+              "https:\/\/rfta.lib.utk.edu\/interviews\/object\/leslie-wereszczak-2019-12-13"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Artist"
+            ]
+          },
+          "value": {
+            "en": [
+              "Wilson, Danny"
+            ]
+          }
+        }
+      ],
+      "rights": "http:\/\/rightsstatements.org\/vocab\/InC\/1.0\/",
+      "requiredStatement": {
+        "label": {
+          "en": [
+            "Provided by"
+          ]
+        },
+        "value": {
+          "en": [
+            "University of Tennessee, Knoxville. Libraries"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/1",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "Topper"
+        ]
+      },
+      "height": 640,
+      "width": 360,
+      "thumbnail": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rftaart:51~datastream~TN\/full\/max\/0\/default.jpg",
+          "width": 1920,
+          "height": 1080,
+          "service": [
+            {
+              "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~rftaart:51~datastream~TN",
+              "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+              "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+            }
+          ],
+          "type": "Image",
+          "format": "image\/jpeg"
+        }
+      ],
+      "items": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/1\/page\/rftaart:51",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/1\/page\/rftaart:51\/627d6730733b3",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rftaart:51\/datastream\/MP4",
+                "type": "Video",
+                "width": 640,
+                "height": 360,
+                "duration": 383,
+                "format": "video\/mp4"
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/1"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/1\/page\/annotation\/rftaart:51",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/1\/page\/annotation\/rftaart:51\/627d67309430e",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rftaart:51\/datastream\/TRANSCRIPT",
+                "type": "Text",
+                "format": "text\/vtt",
+                "label": {
+                  "en": [
+                    "Captions in English"
+                  ]
+                },
+                "language": "en"
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/rftaart\/74\/canvas\/1"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "en": [
+          "This video examines Danny Wilson's artwork \"Topper\", which was inspired by the experiences of Adesola Odunayo and Leslie Wereszczak during the Chimney Tops 2 Wildfires. Both Odunayo and Wereszczak, who work at UT College of Veterinary Medicine, mentioned one particular cat named Topper in their oral histories. He was the most severely burned of nearly 20 \u201cfirecats\u201d that were treated in Emergency Critical Care at UTCVM. Topper had severe face and foot pad burns, but \u201che was a trooper.\u201d He and his owner had a happy reunion three days later. Topper\u2019s story spread and resulted in a Facebook page for people to follow his recovery progress."
+        ]
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": [
+              "Date"
+            ]
+          },
+          "value": {
+            "en": [
+              "April 11, 2022"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Format"
+            ]
+          },
+          "value": {
+            "en": [
+              "motion pictures (visual works)"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Extent"
+            ]
+          },
+          "value": {
+            "en": [
+              "00:06:23"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Subject"
+            ]
+          },
+          "value": {
+            "en": [
+              "Wildfires",
+              "Cats",
+              "Disasters in art"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Description"
+            ]
+          },
+          "value": {
+            "en": [
+              "This video examines Danny Wilson's artwork \"Topper\", which was inspired by the experiences of Adesola Odunayo and Leslie Wereszczak during the Chimney Tops 2 Wildfires. Both Odunayo and Wereszczak, who work at UT College of Veterinary Medicine, mentioned one particular cat named Topper in their oral histories. He was the most severely burned of nearly 20 \u201cfirecats\u201d that were treated in Emergency Critical Care at UTCVM. Topper had severe face and foot pad burns, but \u201che was a trooper.\u201d He and his owner had a happy reunion three days later. Topper\u2019s story spread and resulted in a Facebook page for people to follow his recovery progress."
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Language"
+            ]
+          },
+          "value": {
+            "en": [
+              "English"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Editor of compilation"
+            ]
+          },
+          "value": {
+            "en": [
+              "Morgan, Josh"
+            ]
+          }
+        },
+        {
+          "label": {
+            "en": [
+              "Interviewee"
+            ]
+          },
+          "value": {
+            "en": [
+              "Odunayo, Adesola",
+              "Wereszczak, Leslie",
+              "Wilson, Danny"
+            ]
+          }
+        }
+      ],
+      "rights": "http:\/\/rightsstatements.org\/vocab\/InC\/1.0\/",
+      "requiredStatement": {
+        "label": {
+          "en": [
+            "Provided by"
+          ]
+        },
+        "value": {
+          "en": [
+            "University of Tennessee, Knoxville. Libraries"
+          ]
+        }
+      }
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rftaart%3A74\/datastream\/MODS",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "Bibliographic Description in MODS"
+        ]
+      },
+      "format": "application\/xml",
+      "profile": "http:\/\/www.loc.gov\/standards\/mods\/v3\/mods-3-5.xsd"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/collection\/collections\/rftaart",
+      "type": "Collection"
+    },
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/collection\/collections\/rftacuratedart",
+      "type": "Collection"
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/rftaart%3A74",
+      "label": {
+        "en": [
+          "Topper"
+        ]
+      },
+      "type": "Text",
+      "format": "text\/html"
+    }
+  ],
+  "behavior": [
+    "individuals"
+  ]
+}

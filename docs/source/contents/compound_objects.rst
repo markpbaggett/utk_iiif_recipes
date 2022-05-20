@@ -42,5 +42,55 @@ of multiple compound objects.
 IIIF Manifest
 -------------
 
+The IIIF manifest for a :code:`Compound Object` work inherits the basic format for other manifests. For more information, see
+:ref:`Base Manifest Properties`.
+
+The IIIF manifest for a :code:`Compound Object` most closely follows that of a :code:`Book`. Like it, the
+:code:`Compound Object` has a :code:`behavior` property, but this time its array includes the string value
+:code:`individuals` meaning that the included Canvases of the work are distinct views, and should not be presented in a
+page-turning interface.
+
+Similarly, like :code:`Book`, the items property can consist of many canvases. Like all :code:`Canvases`, the contents
+of the canvas has properties like :code:`id` and :code:`type`, but the details of most property values are dictated by
+the work type of the :code:`Work` the :code:`Canvas` is based on.  For instance, if the :code:`Canvas` is based on a video,
+it too will likely have a :code:`annotations` property that points at its transcript(s).
+
+.. literalinclude:: ../fixtures/rftaart_74.json
+    :language: json
+    :linenos:
+    :lines: 167, 317-324, 365-389, 510-511
+
+For details on the various types that can make up a canvas, see :ref:`Audio Works`, :ref:`Large Image Works`, or
+:ref:`Video Works`.
+
+:code:`Compound Object` manifests are also different in that their :code:`Canvases` have descriptive properties like
+:code:`metadata`, :code:`summary`, :code:`rights`, and :code:`requiredStatement`.
+
+.. literalinclude:: ../fixtures/rftaart_74.json
+    :language: json
+    :linenos:
+    :lines: 167, 317-324, 390-511
+
+This is because parts of :code:`Compound Objects` can live in the wild and have their own descriptive properties.
+
 Viewing Experience
 ------------------
+
+Our compound objects will render in a variety of viewers.  They work just as you'd expect if all canvases are image-like.
+When they canvases are mixed, results are mixed.
+
+In Clover, our compound objects work just like you'd expect.
+
+.. figure:: ../images/compound_clover.gif
+    :alt: Compound Object in Clover
+
+In Mirador, everything works but with no transcripts for audio or video.  Also, navigation gets a little weird when an
+audio or video manifest is encountered.
+
+.. figure:: ../images/compound_mirador.gif
+    :alt: Compound Object in Mirador
+
+In Universal Viewer, compound objects work as long as there and no audio or video canvases.
+
+.. figure:: ../images/compound_uv.gif
+    :alt: Compound Object in Universal Viewer
