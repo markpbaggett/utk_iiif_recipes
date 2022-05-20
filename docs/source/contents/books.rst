@@ -40,6 +40,9 @@ the book, and whether or not there is related OCR / HOCR.
 IIIF Manifest
 -------------
 
+The IIIF manifest for a :code:`Book` work inherits the basic format for other manifests. For more information, see
+:ref:`Base Manifest Properties`.
+
 :code:`Book` works are the only work type that have a :code:`behavior` of :code:`paged`.
 
 .. literalinclude:: ../fixtures/ascoop_book.json
