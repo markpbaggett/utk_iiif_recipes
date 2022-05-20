@@ -1,3 +1,5 @@
+.. _Video Works:
+
 Videos
 ======
 

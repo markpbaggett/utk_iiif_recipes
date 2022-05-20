@@ -1,3 +1,5 @@
+.. _Large Image Works:
+
 Large Image
 ===========
 
