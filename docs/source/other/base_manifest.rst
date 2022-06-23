@@ -129,18 +129,31 @@ requiredStatement
 The :code:`requiredStatement` property includes text that MUST be displayed when a resource is displayed or used. It
 MUST be a JSON-like object with corresponding labels and values that should be displayed.
 
-For digital objects from our repository, this property exists if the XPATH expression :code:`recordInfo/recordContentSource`
-returns a value when executed against the MODS record.  When it does, the :code:`requiredStatement` property gets a
-value like this:
+For digital objects from our repository, this property always represents the rights or license information related to the
+work with HTML elements to help with rendering in the various viewers. An example :code:`requiredStatement` for a work with a
+:code:`rightsstatements.org` URI might look like this:
 
 .. code-block:: json
 
     {
       "requiredStatement": {
-        "label": { "en": [ "Provided by" ] },
-        "value": { "en": [ "VALUE OF XPATH EXPRESSION" ] }
+        "label": { "en": [ "Rights" ] },
+        "value": { "en": [ "<span><a href=\"http://rightsstatements.org/vocab/InC/1.0/\"><img src=\"https://rightsstatements.org/files/buttons/InC.dark-white-interior-blue-type.svg\"/></a></span><br/><span><a href=\"http://rightsstatements.org/vocab/InC/1.0/\">In Copyright</a>:  This Item is protected by copyright and/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. For other uses you need to obtain permission from the rights-holder(s).</span><br/>" ] }
       }
     }
+
+An example :code:`requiredStatement` for a work with a Creative Commons License might look like this:
+
+.. code-block:: json
+
+    {
+      "requiredStatement": {
+        "label": { "en": [ "License" ] },
+        "value": { "en": [ "<span><a href=\"https://creativecommons.org/licenses/by-nc-nd/3.0/\"><img src=\"http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png\"/></a></span><br/><span><a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/\"/>Attribution-NonCommercial-NoDerivs 3.0 Unported</a></span><br/><span>Requires:</span><br/><small>1. credit be given to copyright holder and/or author</small><br/><small>2. copyright and license notices be kept intact</small><br/><span>Permits:</span><br/><small>1. distribution, public display, and publicly performance</small><br/><small>2. making multiple copies</small><br/>" ] }
+      }
+    }
+
+For more information about how we generate the data that gets passed to :code:`requiredStatement`, see :ref:`Rights Information in requiredStatement`.
 
 See `3.1. Descriptive Properties: requiredStatement <https://iiif.io/api/presentation/3.0/#requiredStatement>`_ for more
 information.

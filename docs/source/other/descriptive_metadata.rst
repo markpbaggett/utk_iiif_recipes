@@ -44,4 +44,6 @@ Descriptive metadata in our various work types is done consistently.  Our curren
 +------------------------+-------------------------------------------------------------------------+
 | *Role Term*            | mods:name[mods:role[mods:roleTerm[text()='{$ROLETERM}']]]/mods:namePart |
 +------------------------+-------------------------------------------------------------------------+
+| Provided by            | mods:recordInfo/mods:recordContentSource                                |
++------------------------+-------------------------------------------------------------------------+
 
