@@ -22,4 +22,11 @@ Other IIIF Related Things
 
    other/*
 
+Experimental / Future
+---------------------
 
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   future/*

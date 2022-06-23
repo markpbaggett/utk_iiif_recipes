@@ -1,0 +1,357 @@
+{
+  "@context": [
+    "https:\/\/iiif.io\/api\/presentation\/3\/context.json"
+  ],
+  "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/wwiioh\/2002",
+  "type": "Manifest",
+  "label": {
+    "en": [
+      "McClain, William A.: WWII Oral History"
+    ]
+  },
+  "summary": {
+    "en": [
+      "Interview with William A. McClain on Mar 22, 1988."
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": [
+          "Date"
+        ]
+      },
+      "value": {
+        "en": [
+          "Mar 22, 1988"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Format"
+        ]
+      },
+      "value": {
+        "en": [
+          "interviews"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Subject"
+        ]
+      },
+      "value": {
+        "en": [
+          "Oral history",
+          "World War, 1939-1945--Veterans--United States--Biography"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Description"
+        ]
+      },
+      "value": {
+        "en": [
+          "Interview with William A. McClain on Mar 22, 1988."
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Language"
+        ]
+      },
+      "value": {
+        "en": [
+          "English"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Provided by"
+        ]
+      },
+      "value": {
+        "en": [
+          "University of Tennessee, Knoxville. Libraries"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Interviewee"
+        ]
+      },
+      "value": {
+        "en": [
+          "McClain, William A."
+        ]
+      }
+    }
+  ],
+  "rights": "http:\/\/rightsstatements.org\/vocab\/InC\/1.0\/",
+  "requiredStatement": {
+    "label": {
+      "en": [
+        "Rights"
+      ]
+    },
+    "value": {
+      "en": [
+        "<span><a href=\"http:\/\/rightsstatements.org\/vocab\/InC\/1.0\/\"><img src=\"https:\/\/rightsstatements.org\/files\/buttons\/InC.dark-white-interior-blue-type.svg\"\/><\/a><\/span><br\/><span><a href=\"http:\/\/rightsstatements.org\/vocab\/InC\/1.0\/\">In Copyright<\/a>:  This Item is protected by copyright and\/or related rights. You are free to use this Item in any way that is permitted by the copyright and related rights legislation that applies to your use. For other uses you need to obtain permission from the rights-holder(s).<\/span><br\/>"
+      ]
+    }
+  },
+  "provider": [
+    {
+      "id": "https:\/\/www.lib.utk.edu\/about\/",
+      "type": "Agent",
+      "label": {
+        "en": [
+          "University of Tennessee, Knoxville. Libraries"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https:\/\/www.lib.utk.edu\/",
+          "type": "Text",
+          "label": {
+            "en": [
+              "University of Tennessee Libraries Homepage"
+            ]
+          },
+          "format": "text\/html"
+        }
+      ],
+      "logo": [
+        {
+          "id": "https:\/\/utkdigitalinitiatives.github.io\/iiif-level-0\/ut_libraries_centered\/full\/full\/0\/default.jpg",
+          "type": "Image",
+          "format": "image\/jpeg",
+          "width": 200,
+          "height": 200
+        }
+      ]
+    }
+  ],
+  "thumbnail": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~wwiioh%3A2002~datastream~TN\/full\/max\/0\/default.jpg",
+      "width": 150,
+      "height": 150,
+      "service": [
+        {
+          "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~wwiioh%3A2002~datastream~TN",
+          "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+          "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+        }
+      ],
+      "duration": 400,
+      "type": "Image",
+      "format": "image\/jpeg"
+    }
+  ],
+  "items": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/wwiioh\/2002\/canvas\/0",
+      "type": "Canvas",
+      "label": {
+        "none": [
+          "McClain, William A."
+        ]
+      },
+      "thumbnail": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~wwiioh%3A2002~datastream~TN\/full\/max\/0\/default.jpg",
+          "width": 150,
+          "height": 150,
+          "service": [
+            {
+              "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~wwiioh%3A2002~datastream~TN",
+              "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+              "@profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+            }
+          ],
+          "duration": 400,
+          "type": "Image",
+          "format": "image\/jpeg"
+        }
+      ],
+      "height": 640,
+      "width": 360,
+      "duration": 3373,
+      "items": [
+        {
+          "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/wwiioh\/2002\/canvas\/0\/page\/wwiioh%3A2002",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/wwiioh\/2002\/canvas\/0\/page\/wwiioh%3A2002\/62b48139ee4ce",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/wwiioh%3A2002\/datastream\/PROXY_MP3",
+                "type": "Video",
+                "width": 640,
+                "height": 360,
+                "duration": 1519,
+                "format": "video\/mp4"
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/wwiioh\/2002\/canvas\/0#t=0,1519"
+            },
+            {
+              "id": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/wwiioh\/2003\/canvas\/0\/page\/wwiioh%3A2003\/62b48139ee4ce",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/wwiioh%3A2003\/datastream\/PROXY_MP3",
+                "type": "Video",
+                "width": 640,
+                "height": 360,
+                "duration": 1854,
+                "format": "video\/mp4"
+              },
+              "target": "https:\/\/digital.lib.utk.edu\/assemble\/manifest\/wwiioh\/2002\/canvas\/0#t=1519"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/wwiioh%3A2002\/datastream\/MODS",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "Bibliographic Description in MODS"
+        ]
+      },
+      "format": "application\/xml",
+      "profile": "http:\/\/www.loc.gov\/standards\/mods\/v3\/mods-3-5.xsd"
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/assemble\/collection\/collections\/wwiioh",
+      "type": "Collection"
+    }
+  ],
+  "homepage": [
+    {
+      "id": "https:\/\/digital.lib.utk.edu\/collections\/islandora\/object\/wwiioh%3A2002",
+      "label": {
+        "en": [
+          "McClain, William A.: WWII Oral History - Part 1"
+        ]
+      },
+      "type": "Text",
+      "format": "text\/html"
+    }
+  ],
+  "accompanyingCanvas": {
+    "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~wwiioh%3A2002~datastream~TN\/info.json\/canvas\/accompanying",
+    "type": "Canvas",
+    "label": {
+      "none": [
+        "Accompanying canvas for McClain, William A.: WWII Oral History - Part 1"
+      ]
+    },
+    "width": 150,
+    "height": 150,
+    "items": [
+      {
+        "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~wwiioh%3A2002~datastream~TN\/info.json\/canvas\/accompanying\/page\/wwiioh%3A2002",
+        "type": "AnnotationPage",
+        "items": [
+          {
+            "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~wwiioh%3A2002~datastream~TN\/info.json\/canvas\/accompanying\/page\/wwiioh%3A2002\/62b4813a6b91b",
+            "type": "Annotation",
+            "motivation": "painting",
+            "body": {
+              "id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~wwiioh%3A2002~datastream~TN\/full\/full\/0\/default.jpg",
+              "type": "Image",
+              "width": 150,
+              "height": 150,
+              "format": "image\/jpeg",
+              "service": [
+                {
+                  "@id": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~wwiioh%3A2002~datastream~TN",
+                  "@type": "http:\/\/iiif.io\/api\/image\/2\/context.json",
+                  "profile": "http:\/\/iiif.io\/api\/image\/2\/level2.json"
+                }
+              ]
+            },
+            "target": "https:\/\/digital.lib.utk.edu\/iiif\/2\/collections~islandora~object~wwiioh%3A2002~datastream~TN\/info.json\/canvas\/accompanying"
+          }
+        ]
+      }
+    ]
+  },
+  "structures": [
+    {
+      "type": "Range",
+      "id": "https://iiif.io/api/cookbook/recipe/0064-opera-one-canvas/range/1",
+      "label": {
+        "it": [
+          "Gaetano Donizetti, L'Elisir D'Amore"
+        ]
+      },
+      "items": [
+        {
+          "type": "Range",
+          "id": "https://iiif.io/api/cookbook/recipe/0064-opera-one-canvas/range/2",
+          "label": {
+            "en": [
+              "Interview Parts"
+            ]
+          },
+          "items": [
+            {
+              "type": "Range",
+              "id": "https://iiif.io/api/cookbook/recipe/0064-opera-one-canvas/range/3",
+              "label": {
+                "en": [
+                  "Part 1"
+                ]
+              },
+              "items": [
+                {
+                  "type": "Canvas",
+                  "id": "https://digital.lib.utk.edu/assemble/manifest/wwiioh/2002/canvas/0#t=0,1519"
+                }
+              ]
+            },
+            {
+              "type": "Range",
+              "id": "https://iiif.io/api/cookbook/recipe/0064-opera-one-canvas/range/4",
+              "label": {
+                "en": [
+                  "Part 2"
+                ]
+              },
+              "items": [
+                {
+                  "type": "Canvas",
+                  "id": "https://digital.lib.utk.edu/assemble/manifest/wwiioh/2002/canvas/0#t=1520"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
