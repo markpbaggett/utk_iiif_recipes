@@ -1,4 +1,4 @@
-.. _Rights Information in requiredStatement
+.. _Rights Information in requiredStatement:
 
 Rights Information in requiredStatement
 =======================================
