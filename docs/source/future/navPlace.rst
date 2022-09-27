@@ -152,3 +152,20 @@ When the property is generated and added, it looks like this:
         }
       ]
     }
+
+navPlace Properties on Viewers
+------------------------------
+
+Currently, there is only one recognized viewer that supports :code:`navPlace`, `navPlace Viewer <https://github.com/CenterForDigitalHumanities/navplace-viewer/>`.
+This viewer makes use of the property on the manifest and range.  It also will dereference the properties from both locations
+when a collection manifest is passed to it.
+
+A :code:`navPlace` body on the manifest is added to a map with a description and links to open the manifest in Universal
+Viewer and Mirador:
+
+.. image:: ../images/navPlace_manifest.png
+
+A :code:`navPlace` body on a Range is added to the map, but only with the label.  In the future, we are hoping this will
+change to include a content state URI that is passed to the viewers so that the corresponding timestamp can be opened:
+
+.. image:: ../images/navPlace_range.png
