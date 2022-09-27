@@ -160,6 +160,8 @@ Currently, there is only one recognized viewer that supports :code:`navPlace`, `
 This viewer makes use of the property on the manifest and range.  It also will dereference the properties from both locations
 when a collection manifest is passed to it.
 
+For this example, we will pass `rfta:8 to the viewer <https://centerfordigitalhumanities.github.io/navplace-viewer/?iiif-content=https://digital.lib.utk.edu/assemble/manifest/rfta/8>`_.
+
 A :code:`navPlace` body on the manifest is added to a map with a description and links to open the manifest in Universal
 Viewer and Mirador:
 
