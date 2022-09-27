@@ -156,7 +156,7 @@ When the property is generated and added, it looks like this:
 navPlace Properties on Viewers
 ------------------------------
 
-Currently, there is only one recognized viewer that supports :code:`navPlace`, `navPlace Viewer <https://github.com/CenterForDigitalHumanities/navplace-viewer/>`.
+Currently, there is only one recognized viewer that supports :code:`navPlace`, `navPlace Viewer <https://github.com/CenterForDigitalHumanities/navplace-viewer/>`_.
 This viewer makes use of the property on the manifest and range.  It also will dereference the properties from both locations
 when a collection manifest is passed to it.
 
